@@ -1,0 +1,19 @@
+radionuclideS_textInput	radioactiveMaterialName_textInput	productNumber_textInput	sourceType_select	physicalForm_select	activityType	activityReal_textInput	activityCoefficient_textInput	activityExponent_textInput	unitOfMeasureActivity_select	radioactiveManufacturersSelectFilter_textInput	searchResultSummary_label
+c-1			Please Select	Please Select	realNumber_radioInput				Please Select		14 rows
+c-14			Please Select	Please Select	realNumber_radioInput				Please Select	ASAHI KASEI CHEMICALS CORP	14 rows
+c-10			Please Select	Please Select	realNumber_radioInput				Please Select		
+"KHAI-888,KHAI-889"			Please Select	Please Select	realNumber_radioInput				Please Select	BHABHA ATOMIC RESEARCH CENTRE	2 rows
+	ace		Please Select	Please Select	realNumber_radioInput				Please Select	"SHIN-ETSU CHEMICAL CO., LTD."	
+	acetyl-CoA		Please Select	Please Select	realNumber_radioInput				Please Select	MENDELEEV UNIVERSITY OF CHEMICAL	
+	123		Please Select	Please Select	realNumber_radioInput				Please Select	1-MATERIAL	
+		ARC	Please Select	Please Select	realNumber_radioInput				Please Select	A&G INDUSTRIAL GAS TRADING	
+		ARC 0310	Please Select	Please Select	realNumber_radioInput				Please Select	AKOS CONSULTING & SOLUTIONS DEUTSCHLAND	
+		test	Please Select	Please Select	realNumber_radioInput				Please Select		
+			SEALED	Please Select	realNumber_radioInput				Please Select		
+			UNSEALED	Please Select	realNumber_radioInput				Please Select		
+			Please Select	Gas	realNumber_radioInput				Please Select		3 rows
+			Please Select	Liquid	realNumber_radioInput				Please Select		48 rows
+			Please Select	Solid	realNumber_radioInput				Please Select		38 rows
+			Please Select	Please Select	realNumber_radioInput	1			BECQUEREL		1 rows
+			Please Select	Please Select	scientificNotation_radioInput		1	2	BECQUEREL		3 rows
+			   	    	   						
