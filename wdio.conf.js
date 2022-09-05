@@ -206,6 +206,11 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: [
+        'dot',
+        ['junit', {
+            outputDir: `./${OUTPUT_FOLDER}/JUnit`,
+        }]
+
         [
             'spec', {
                 addConsoleLogs: true
