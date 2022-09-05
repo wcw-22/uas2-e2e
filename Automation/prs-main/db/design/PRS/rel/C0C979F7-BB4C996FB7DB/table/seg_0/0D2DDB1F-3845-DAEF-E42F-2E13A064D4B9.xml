@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D2DDB1F-3845-DAEF-E42F-2E13A064D4B9" name="PRSSUPPLIER">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 07:31:36 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUPP_C" id="36DA4F8E-2F6A-07C4-A5A7-A9D132905769">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 07:35:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPP_T" id="696EA539-6CB8-D43B-6171-2FBA1D63736F">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 07:45:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTRY_C" id="0D4C5192-8F5F-6201-F67B-17D1E4300900">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 07:47:01 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF5BEB92-3B2E-CBE2-A1B1-DC21B6607EA7" referredColumn="9B3E1CD6-F727-2AB7-5F86-24F77EC0B943"/>
+</associations>
+</Column>
+<Column name="DEFUNCT_F" id="84363EB2-44ED-FD64-159B-0D01DF11285F">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 18:49:38 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C9C563A-D7CD-642D-7346-A1ACBFA5B78D" name="PRS_PS_PK_SC">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 07:45:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36DA4F8E-2F6A-07C4-A5A7-A9D132905769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EE1C406-AB39-1A22-8209-162274A3971F" name="PRS_PS_FK_CY">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-15 04:00:09 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D4C5192-8F5F-6201-F67B-17D1E4300900"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

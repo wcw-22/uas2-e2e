@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRS_APPV_STS" directorySegmentName="seg_0" id="55170AE7-2F1B-62DA-8554-C6DB620D8E14">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:58 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1AEEED91-E95E-D978-E327-0996CEF9805E</segment>
+<tableSpace>EA4D16F9-BD95-11DE-9332-9B0E1F04D354</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="AUTOAPPV_F" id="260A643E-4AA6-2224-E929-362ABFAB35AB">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PR_N" id="50556D1A-23BC-C635-34B7-D67E31C36BE0">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APPV_N" id="55C8CF2F-1389-A1F1-816B-B95982A5AA4F">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APPV_USER_I" id="61D3D5E0-EC00-FB69-B3D2-E3B8AAF961D3">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APPV_TP_C" id="7D2D39EB-BC17-98AB-D120-91C70737CAF2">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REC_UPDUSER_I" id="83AF2AFF-9396-A645-DE64-0A483D18CA50">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REMK_T" id="95452A82-3D6C-92D4-C357-E90D5ECF66ED">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APPV_STS_C" id="9AD5A01F-F83D-1EC9-1175-3BD4E735A5B4">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PER_AUTHUSER_I" id="C99F61EC-6412-6C98-7281-A7A132C5E814">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APPVR_ACCESSTP_C" id="E80C6DE0-FC16-EE20-9EB3-AA3DE32832E1">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REC_UPD_DTM" id="FD9B61C0-0DAE-805D-8896-1FA671BD723A">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PAS_I_AUI" id="293F472F-E692-3E8C-56D7-54FF32C2191A">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<schemaObject>E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB</schemaObject>
+<segment>A5FEADE9-2585-C374-967B-7EBC85F1C666</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PAS_I_PAI" id="BE1CEF41-A3B1-102F-81E6-D6EB0FED2A7D">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<schemaObject>E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB</schemaObject>
+<segment>A5FEADE9-2585-C374-967B-7EBC85F1C666</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PAS_I_PRN" id="DC887E5C-E20D-8ED2-80BB-9F4BCD77C87D">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<schemaObject>E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB</schemaObject>
+<segment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PAS_PK_AN" id="DE70F593-4DE2-B9A1-BA01-1177B9A5D0FB">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<schemaObject>E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB</schemaObject>
+<segment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PAS_I_ATC" id="DE877A22-5F36-5D55-D97F-908270406AE2">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<schemaObject>E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB</schemaObject>
+<segment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PAS_I_ASC" id="E2864AC4-FA55-768A-D754-940FF7B6F0F5">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<schemaObject>E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB</schemaObject>
+<segment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_PAS_FK_AAC" id="5E275190-E968-23C6-8607-C8303BA90F63">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_PAS_FK_PRN" id="789D1922-35A0-14A9-27C5-8577599BE691">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_PAS_FK_ATC" id="7A313E87-284F-CA09-6F10-F2964403F5C4">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_PAS_FK_ASC" id="882AB4A0-656F-6EE1-2187-4B24A9EBECED">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRS_PAS_PK_AN" id="776DA794-5309-CDAF-EAEE-1FF7656951B2">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<segment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+<existingIndex>DE70F593-4DE2-B9A1-BA01-1177B9A5D0FB</existingIndex>
+<indexSegment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

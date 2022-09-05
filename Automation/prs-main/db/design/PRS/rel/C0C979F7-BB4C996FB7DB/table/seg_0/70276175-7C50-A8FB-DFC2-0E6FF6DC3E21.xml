@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70276175-7C50-A8FB-DFC2-0E6FF6DC3E21" name="PRS_PRDCONTRACT_ACCESS">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:18:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[This table is used to store period contract access (applicable level) details. Eg Whether the period contract is applicable for a faculty or a department]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACCESS_N" id="6C2FD16C-653C-63EC-0887-0DA89D893372">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:22:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto generated unique identifying/sequence no for the access record]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRDCON_SEQ_N" id="A10384C0-0AF6-C42A-F317-64D6E4A00D10">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:22:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract Sequence no (Reference to PRS_PERIODCONTRACT_PARTICS)]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="11224F81-18B3-5B0F-5AFF-C5730EE32C05" referredColumn="C4BD54F7-5A79-4FBC-925F-13F250A31893"/>
+</associations>
+</Column>
+<Column name="FAC_C" id="B387E5FC-52B4-BEE1-FFFF-D03BD623E3E8">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:22:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Faculty Code of the faculty that can access the period contract (Reference to FACULTY)]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="402ADE42-5FB3-F12F-9003-E2E91B7E71A2" referredColumn="115F7FA0-5CE3-827D-2256-55E2F1562F16"/>
+</associations>
+</Column>
+<Column name="DEPT_C" id="A6A965BF-1B0A-FD85-BD97-C8F2C5748B8E">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:22:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Department Code  of the faculty that can access the period contract (Reference to DEPARTMENT)]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F6E931F-6411-1C7F-806F-1A9B1C5B5D4B" referredColumn="7BE584AC-FA0F-B823-4C64-3AB813EB325C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1F5E7CC-2655-6ADD-4DC4-DD4081D859EE" name="PRS_PCA_PK_AN">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:22:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C2FD16C-653C-63EC-0887-0DA89D893372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C78B2D32-D038-BF42-A93B-19C68E9F12DE" name="PRS_PCA_FK_PS">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:25:13 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A10384C0-0AF6-C42A-F317-64D6E4A00D10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFC3ABB4-4A1A-467D-5010-62934885CA43" name="PRS_PCA_FK_FC">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:27:57 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B387E5FC-52B4-BEE1-FFFF-D03BD623E3E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A840EA1-6BDA-D43E-7E9C-CF38CADD6C41" name="PRS_PCA_FK_DC">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:27:57 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6A965BF-1B0A-FD85-BD97-C8F2C5748B8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

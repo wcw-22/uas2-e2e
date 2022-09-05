@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96AEC574-F328-D356-280F-28ED3C102BDA" name="PRS_REQ_DOCUMENT">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_REQ_DOCUMENT</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table stores relationship between the requests and the documents.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>643F1B48-FF25-EF45-5F68-4A24EC054BB7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PR_N" id="E07689F7-BAF8-8AA8-04DD-BB5C5E64400A">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_REQ_DOCUMENT</sourceObjSchema>
+<sourceObjName>PR_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Foreign key referring to item in quotation table.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>8830B57B-EEEE-044F-3802-79AED439800D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F22B0B08-08C4-03F2-C7B3-6569B6A9B3E9" referredColumn="9A0DCB1E-7803-F44B-ADED-4F5A6B7754C9"/>
+</associations>
+</Column>
+<Column name="DOCU_N" id="DCA18882-C27A-FFCF-74E9-4807E665BDD5">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_REQ_DOCUMENT</sourceObjSchema>
+<sourceObjName>DOCU_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Foreign key referring to item in document table.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>6CE640F5-77E6-2323-7D04-7F2517C1E651</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44AC9CB1-7089-BA98-3C63-F2D46E1ECB36" referredColumn="F2894AE9-9E88-F234-755F-E0E90811EE8A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="198FD9AD-5374-1A8C-79DF-9E1599587483" name="PRS_PRD_PK_PNDN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PRD_PK_PNDN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>F675D868-017D-C71F-83F2-3C9E77631448</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E07689F7-BAF8-8AA8-04DD-BB5C5E64400A"/>
+<colUsage columnID="DCA18882-C27A-FFCF-74E9-4807E665BDD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5DDFBAD-8A0A-B741-78C3-6F5162D398A1" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PRD_PK_PNDN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PRD_PK_PNDN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>B4EFDD3D-41F6-5A7C-B934-57A5BB6C6A53</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E07689F7-BAF8-8AA8-04DD-BB5C5E64400A"/>
+<colUsage columnID="DCA18882-C27A-FFCF-74E9-4807E665BDD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D04577BA-B34A-1645-7F6B-A7E5C2016F9C" name="PRS_PRD_FK_DN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCA18882-C27A-FFCF-74E9-4807E665BDD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5FAFFD6-5A0B-FCB1-D01C-1FB4743F52BA" name="PRS_PRD_FK_PN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E07689F7-BAF8-8AA8-04DD-BB5C5E64400A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

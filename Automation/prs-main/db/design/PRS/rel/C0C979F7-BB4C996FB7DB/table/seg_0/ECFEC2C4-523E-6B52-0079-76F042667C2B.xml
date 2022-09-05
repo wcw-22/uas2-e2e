@@ -1,0 +1,221 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ECFEC2C4-523E-6B52-0079-76F042667C2B" name="PRS_LOCATION">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_LOCATION</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table stores the location list for the Purchase Requisition System.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>499357F7-1C2C-C3EB-9034-BA9688FCF21C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOC_N" id="6FB79EFF-4F01-0657-1405-9FFDED5FC5A9">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_LOCATION</sourceObjSchema>
+<sourceObjName>LOC_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Oracle generated sequence number]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>B141B079-55D8-EA88-CD14-E1249FA248BE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHM_LOC_N" id="C3D55279-CE90-D9F1-7378-6DDDC573894B">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_LOCATION</sourceObjSchema>
+<sourceObjName>CHM_LOC_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chemical Location ID. The info is from web service.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>BF935FAD-6903-89AE-7722-53821824F188</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHM_LOC_T" id="DB8DACF0-6DEA-0362-D3D5-24F147883C56">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_LOCATION</sourceObjSchema>
+<sourceObjName>CHM_LOC_T</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Location Description]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>469F0156-4864-8066-6506-2B415A570616</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PR_N" id="4AC01B7D-3D16-C339-002A-4365706023C0">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_LOCATION</sourceObjSchema>
+<sourceObjName>PR_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reference to Purchase Request table]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>38A31880-6E7A-A538-14C9-036EC8A00CF7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02578AF5-1847-0946-34D9-40637D6298A1" referredColumn="9A0DCB1E-7803-F44B-ADED-4F5A6B7754C9"/>
+</associations>
+</Column>
+<Column name="FAC_C" id="7900F51B-A070-B391-797E-199CEED5F534">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_LOCATION</sourceObjSchema>
+<sourceObjName>FAC_C</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Faculty Code. Referenced to Faculty Table]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>03A4EE74-DE17-DA78-F489-FE6C7504538E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B9C5C2A-0DFA-7A71-DA61-89877CEA0B49" referredColumn="115F7FA0-5CE3-827D-2256-55E2F1562F16"/>
+</associations>
+</Column>
+<Column name="DEPT_C" id="84AF9406-BE93-000F-D057-D5C99D0261E9">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_LOCATION</sourceObjSchema>
+<sourceObjName>DEPT_C</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Department Code. Referenced to Department Table]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>07C3E636-2DC5-85A3-CC1F-439960F2516B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE691559-5557-CE1E-E067-D0A630BB1D53" referredColumn="7BE584AC-FA0F-B823-4C64-3AB813EB325C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BD4783A-C12C-4234-2710-CBA099BAB3BD" name="PRS_PL_PK_LN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PL_PK_LN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>CB30605F-5946-E473-6DE8-75499C7B949B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FB79EFF-4F01-0657-1405-9FFDED5FC5A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DFC3A02-CF09-BB40-E91E-A3786795ED1A" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PL_I_DC">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PL_I_DC</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>2061806C-8B6D-33CF-1D15-975820B6B5C2</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84AF9406-BE93-000F-D057-D5C99D0261E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="165081C6-F38E-5C82-D6CC-DCCC918EC254" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PL_I_FC">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PL_I_FC</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>0996E107-CBBB-B279-2BED-159C03D04B7C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7900F51B-A070-B391-797E-199CEED5F534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6AD8A75-E8F8-3255-0A8B-4D00770BF80D" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PL_I_PN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PL_I_PN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>BF6CFDA3-B0BE-C820-FCD8-7B7D3D27D790</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AC01B7D-3D16-C339-002A-4365706023C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4601EB75-AC6C-FB6C-3DF7-B10D85EAC80C" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PL_PK_LN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PL_PK_LN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>CFE0ED27-7D12-0070-D137-469B31367081</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FB79EFF-4F01-0657-1405-9FFDED5FC5A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9CF7C39-4E8F-C246-AC3C-2052C5AA6C76" name="PRS_PL_FK_DC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84AF9406-BE93-000F-D057-D5C99D0261E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F7F00E8-9289-B5B4-558B-DEE4674E8B29" name="PRS_PL_FK_FC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7900F51B-A070-B391-797E-199CEED5F534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1788D28B-C426-D919-8008-CD08EFFB8DCF" name="PRS_LOCATION_PRS_PURCHASE_REQ_FK">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AC01B7D-3D16-C339-002A-4365706023C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="14F85C68-8F26-81F8-A55D-076ECE3EBA06" name="Requests">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 02:10:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="request_number" id="4C03E305-CCFA-5F67-0EFA-0ED1D3990336">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 02:11:23 UTC</createdTime>
+<comment>There are 3 different kinds of request, &quot;PR&quot;,&quot;AOR&quot; and &quot;SQRR&quot;. The request number will be prefixed with &quot;pr-&quot;, &quot;aor-&quot; and &quot;sqrr-&quot; respectively.&lt;br/&gt;</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+<Attribute name="requestor_number" id="28706EE0-4FF8-A8F0-3CAB-1A9B27DB1829">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 02:11:42 UTC</createdTime>
+<comment>Identification number to uniquely identify a staff or student.&lt;br/&gt;staff number, such as 067345&lt;br/&gt;student matric id, such as A0180970B</comment>
+<commentInRDBMS>Staff number or sutdent matric id, for uniquely identify a staff or student.</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+<Attribute name="currency" id="00546D79-D1EA-EA5C-7FC7-97C313BF834C">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 02:13:33 UTC</createdTime>
+<comment>Each PR shall have one currency, being SGD or any foreign currency.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="total_amount" id="867751B6-2E8C-38F0-1DAA-C5F21EDE2193">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 02:14:10 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="epv" id="767690B9-0198-5442-F977-B3DC56BE44AA">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 02:14:45 UTC</createdTime>
+<comment>To indicate if the PR epv range.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="pr_detail_json" id="B09AFA99-1338-8F2D-09D1-22036C736B05">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 02:15:07 UTC</createdTime>
+<comment>Product details specific to the choosen category of product.&lt;br/&gt;For instance, chemical productl contains &quot;location&quot;.&lt;br/&gt;For instance:&lt;br/&gt;{&lt;br/&gt;&quot;location&quot;:&quot;kent ridge 1, NUS 123456&quot;&lt;br/&gt;}</comment>
+<commentInRDBMS>Contains content specific to this PR. PR belongs to different different category will have different details.</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Attribute>
+<Attribute name="status" id="DA10E3C5-2A7C-97C2-E282-DF66575600B5">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-20 00:42:27 UTC</createdTime>
+<comment>Request status such as DRAFT,SUBMITTED,PENDING,APPROVED,REJECTED,CANCELLED etc.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="quotation_justification" id="F7410F93-0620-33AE-3859-BE2240CCB071">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<comment>Reason where no enough quotations are provided or any other special reasons.</comment>
+<commentInRDBMS>For purchase request  level scenarios where no enough quotations are provided or there are other special reasons.</commentInRDBMS>
+<generatorID>1BD72DCB-B795-D5A1-3802-7A2143879D9A</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Attribute>
+<Attribute name="faculty_code" id="51CC7F13-2777-6DCF-5B28-FD4F855792A2">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:51:19 UTC</createdTime>
+<generatorID>4FC1455D-203B-9583-7484-4EF05F2452DE</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>3C985AB7-8E79-18C8-BEC5-1D6A1BF8473B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="department_code" id="82C804A0-E2E7-4912-362B-95C30F83E4DA">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:51:44 UTC</createdTime>
+<generatorID>62510D9D-8D4E-E5BD-E5A8-6E0BC8CC7723</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>A4664602-23AB-AE0E-7E24-33ED9807B381</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="944E9B75-CD69-5A55-B8D2-1522673CB7BF" name="PRS PR REQNUMBER  UN">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>D4EEB759-C5D8-8470-658F-0994AACC1854</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>4C03E305-CCFA-5F67-0EFA-0ED1D3990336</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BBADC903-5498-86C0-662B-D2894D2CC4D6" name="PurchaseRequests PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:55:35 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4C03E305-CCFA-5F67-0EFA-0ED1D3990336</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A9ACDA5-D6E9-F076-DEDD-42AEB68199DD" name="PRS_AOR_APPVR">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:46:43 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AOR_APPVR_N" id="D3A5FB1F-E9ED-0D3E-DDF8-684CB424DFD4">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[ This value is unique.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAC_C" id="147F090B-6C37-3A1E-FE9A-74D29BDF0F10">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Faculty Code. Referenced to Faculty Table]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1602C856-A066-6D65-7FCE-4839A0667AAF" referredColumn="115F7FA0-5CE3-827D-2256-55E2F1562F16"/>
+</associations>
+</Column>
+<Column name="DEPT_C" id="F051B656-C63E-2ABB-252D-D6E0C7ECADD4">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Department Code. Referenced to Department Table]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF64AEDD-AE1A-3830-E5A9-E4D9C03ED58F" referredColumn="7BE584AC-FA0F-B823-4C64-3AB813EB325C"/>
+</associations>
+</Column>
+<Column name="REC_UPDUSER_I" id="1A10E50F-C104-3801-459B-D22C306CEC12">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff Number or student matric ID of the staff or student who has updated the record most recently.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPD_DTM" id="86C6CBBF-87C6-0467-7A5C-49F3927FA692">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date when record was last updated.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A97D657-206D-0C56-EADE-24F3DD17770A" name="PRS_PAA_PK_AAN">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:51:55 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3A5FB1F-E9ED-0D3E-DDF8-684CB424DFD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="565568D3-C9DD-E064-163E-FF22FCDCD22B" name="PRS_PAA_UK_FCDC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:50:40 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="147F090B-6C37-3A1E-FE9A-74D29BDF0F10"/>
+<colUsage columnID="F051B656-C63E-2ABB-252D-D6E0C7ECADD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C781FF85-4C03-7806-6828-56DF89475098" name="PRS_PAA_I_FC">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:57:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="147F090B-6C37-3A1E-FE9A-74D29BDF0F10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="713CEADA-0893-53B8-87D8-AB0E9FB659E2" name="PRS_PAA_I_DC">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:57:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F051B656-C63E-2ABB-252D-D6E0C7ECADD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A233FFEB-4587-2CD9-4380-06E2456C8096" name="PRS_PAA_FK_FC">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:53:12 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="147F090B-6C37-3A1E-FE9A-74D29BDF0F10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7ED4D623-8439-F077-B6E7-20FE5B9DD878" name="PRS_PAA_FK_DC">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:53:12 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F051B656-C63E-2ABB-252D-D6E0C7ECADD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

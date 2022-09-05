@@ -1,0 +1,248 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="686511BB-CBF1-AC71-7EFE-43D583DC85F9" name="PRS_JOB_EXECUTION">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_JOB_EXECUTION</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[This table holds all information relevant to a JobExecution, and serves as the top of the overall hierarchy.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>7E50268B-C508-85C3-CEFE-612DA751B9A2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOB_EXECUTION_ID" id="55E7EDE2-E4B0-D5E5-5B92-356D5F855C75">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>JOB_EXECUTION_ID</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key that uniquely identifies this execution.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>152AF2E9-61B7-4BCA-C16E-277D6D7599D4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERSION" id="CB86BA20-F081-1404-8086-095F1DB023F2">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>VERSION</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[For keeping track whether a record has been updated.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>499943C3-6D7B-D42C-222D-25DDEF3E22C8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_INSTANCE_ID" id="7834914B-CAE8-ABCF-357B-A5AEB03B6673">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>JOB_INSTANCE_ID</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Foreign key from the PRS_JOB_INSTANCE table indicating the instance to which this execution belongs.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>BC3EC172-8012-B2E4-81BC-A810893914A3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1A00393-32D4-20C9-E3BD-144490D4C732" referredColumn="2EC91DD2-7319-2E4E-FA52-6AD2ABA6C476"/>
+</associations>
+</Column>
+<Column name="CREATE_TIME" id="044B1598-8E3E-888C-A8C3-53B13EEE55E1">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>CREATE_TIME</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp representing the time that the execution was created.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>83BBD952-36D4-1403-90A3-6F0113AEB84E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_TIME" id="EAB21D51-6704-766A-04D4-0CB64C7FCD88">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>START_TIME</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp representing the time the execution was started.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>0AE07868-7189-AF5D-B9D6-467BCDA67771</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_TIME" id="BBAFA307-09C7-A469-6394-804B942158A5">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>END_TIME</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp representing the time the execution was finished, regardless of success or failure.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>9F554FD7-2C23-D860-2E10-B5FDF0A40C0C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="B7F5A70E-2ED7-A197-C8AA-1C506CC52109">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Character string representing the status of the execution.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>264BDF3A-6020-F6D9-D8EF-D62CE6D6EA71</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXIT_CODE" id="82760AC3-E56C-69EE-A231-E12394B06184">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>EXIT_CODE</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Character string representing the exit code of the execution.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>E63C408C-5DE4-F3C7-DE77-3945CF614ED1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXIT_MESSAGE" id="EAD3B66B-6028-7E42-CE02-EC7C88689BB8">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>EXIT_MESSAGE</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Character string representing a more detailed description of how the job exited.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>409062CB-D1EF-30AE-307E-3DBB0F742E75</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2500 BYTE</dataTypeSize>
+<ownDataTypeParameters>2500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_UPDATED" id="C5214EBF-F81C-C965-8DD8-80D81533AC94">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>LAST_UPDATED</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp representing the last time this execution was persisted.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>D0C4B7A5-FF2D-09A5-3E06-6B43B0AF822B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_CONFIGURATION_LOCATION" id="84C1CE82-0FD8-F780-2229-07E7AEBB5299">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION</sourceObjSchema>
+<sourceObjName>JOB_CONFIGURATION_LOCATION</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Stores name of job execution configuration]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>6945C07C-0DF0-9D79-271C-101E6496B5F9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2500 BYTE</dataTypeSize>
+<ownDataTypeParameters>2500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2BE4B9CA-8ED7-570C-0133-640644573F53" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_JOB_EXECUTION_PK">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>SYS_C00524037</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>126C7A03-28FF-F9D0-3B35-620DE46B5671</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55E7EDE2-E4B0-D5E5-5B92-356D5F855C75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25FB4BDA-79D2-9C18-F933-F0DCD379D2EE" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PJE_I_STS">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PJE_I_STS</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>4F5723A7-2815-B355-32A8-462586343F5E</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7F5A70E-2ED7-A197-C8AA-1C506CC52109"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69DEB91C-93DE-99E1-B2E0-4CBD45A107F2" name="PRS_PJE_FK_JII">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7834914B-CAE8-ABCF-357B-A5AEB03B6673"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,1 @@
+update PRS_APPV_STS set APPVR_ACCESSTP_C = 'ROLE_DEAN' where APPV_N in ('5098', '5631');

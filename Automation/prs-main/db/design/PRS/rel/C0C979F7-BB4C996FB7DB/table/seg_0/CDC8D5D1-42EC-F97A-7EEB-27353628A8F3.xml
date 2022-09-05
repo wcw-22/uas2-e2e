@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDC8D5D1-42EC-F97A-7EEB-27353628A8F3" name="PRS_PRDCONTRACT_SUPPLIER">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:11:43 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUPP_N" id="7F636CCB-F208-E365-C8DD-55539E84803C">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:12:37 UTC</createdTime>
+<commentInRDBMS>Auto generated seq no</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>PRS_CTRCT_SUPPLIER_SEQ</autoIncrementSequenceName>
+</Column>
+<Column name="PRDCON_SEQ_N" id="5FB845F2-DAFD-B73E-6390-5B0FEF68D36D">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:18:39 UTC</createdTime>
+<commentInRDBMS>Contract Seq no (Reference to PRS_PERIOD_CTRCT)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<delegate>C4BD54F7-5A79-4FBC-925F-13F250A31893</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F358059B-02A2-CDF4-63CB-5E49AF8202FB" referredColumn="C4BD54F7-5A79-4FBC-925F-13F250A31893"/>
+</associations>
+</Column>
+<Column name="SUPP_C" id="1C125934-8B72-57A0-775B-43288B454428">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:18:39 UTC</createdTime>
+<commentInRDBMS>Supplier Code (Reference to PRSSUPPLIER)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<delegate>36DA4F8E-2F6A-07C4-A5A7-A9D132905769</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6213E631-08E5-A3F6-176D-E0FB39885A5E" referredColumn="36DA4F8E-2F6A-07C4-A5A7-A9D132905769"/>
+</associations>
+</Column>
+<Column name="CRCY_C" id="BAFB6E94-69D3-3482-B1A0-4733AE7282A7">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-24 22:09:35 UTC</createdTime>
+<commentInRDBMS>Currency Code(Reference to PRS_CURRENCY)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<delegate>5B3CCC7A-BCED-E258-973A-8FC40A4CF574</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14585384-80D3-1BDA-0DF8-35AEDD5DC8D3" referredColumn="5B3CCC7A-BCED-E258-973A-8FC40A4CF574"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5EB9DD7C-D8B9-67C4-21D5-3C0083C58721" name="PRS_PCS_PK_SN">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:12:37 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F636CCB-F208-E365-C8DD-55539E84803C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30185207-82BB-3889-6940-A0E881ADEE03" name="PRS_PCS_FK_PC">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:18:39 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FB845F2-DAFD-B73E-6390-5B0FEF68D36D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16FA8304-6C39-3AF3-3D85-288F686153A8" name="PRS_PCS_FK_SP">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:21:38 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C125934-8B72-57A0-775B-43288B454428"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51406383-A0DF-F5C1-B15B-47AD8A6D9F62" name="PRS_PCS_FK_CC">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-24 22:09:35 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAFB6E94-69D3-3482-B1A0-4733AE7282A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,211 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D61DE18-59FC-4AE7-235B-D9C211CD89C8" name="PRS_PO_LMMSINVENTORY">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PO_LMMSINVENTORY</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table to store LMMS container IDs for goods return]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>B8345EAD-893D-30A6-C7A8-C537D1E43610</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LMMS_INVNT_N" id="70735AA1-5D64-7C4B-43AA-92F558F93EE8">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PO_LMMSINVENTORY</sourceObjSchema>
+<sourceObjName>LMMS_INVNT_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Primary key]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>C8D0E77A-595C-424F-1664-ACA757AD4C27</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RT_ITEM_N" id="EBA15219-F1FC-4BD3-0093-6A80FE50A190">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PO_LMMSINVENTORY</sourceObjSchema>
+<sourceObjName>RT_ITEM_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Goods Return PK referencing PRS_RECEIPT_LINEITEM]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>398C20E0-94D1-11C1-9C7F-5DA308566A77</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="409E34A0-31A4-D724-068E-BEC8B1CC6F46" referredColumn="E5B0C79F-FA79-0A12-A419-A5585505C36B"/>
+</associations>
+</Column>
+<Column name="SAP_PO_N" id="45422224-91F4-2B92-0B5A-F6F2AE32AE7D">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PO_LMMSINVENTORY</sourceObjSchema>
+<sourceObjName>SAP_PO_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[SAP PO number]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>C6C45C8E-CE7B-13E8-97FB-D9B39419A9AD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTNR_N" id="CAEA338E-11FD-C4DD-813E-EB166EC92962">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PO_LMMSINVENTORY</sourceObjSchema>
+<sourceObjName>CONTNR_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Container ID of the LMMS containers to be returned]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>B4D39AB0-4AB0-2CBD-E00A-781B8982B0DD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INVNT_STS_C" id="2C015335-CCC2-AB0C-01DA-9DE9ECE3E3CB">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PO_LMMSINVENTORY</sourceObjSchema>
+<sourceObjName>INVNT_STS_C</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status of the LMMS inventory request (RESERVED/RESERVED-COMMIT/RESERVED-ROLLBACK]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>D1EFDF12-90BA-AFD7-C431-81D4A45553C6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57C3B296-F21C-E1F1-CAE8-0B3265509AC5" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="REC_UPDUSER_I" id="ADFFE7B0-9BB2-4C67-EDBB-53801B8486AF">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PO_LMMSINVENTORY</sourceObjSchema>
+<sourceObjName>REC_UPDUSER_I</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff Number or student matric ID of the staff or student who has updated the record most recently.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>CBAF080C-975C-3238-4F74-9E992EB20D5B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPD_DTM" id="A5DE0DF0-31A0-3527-6770-B579F3885549">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PO_LMMSINVENTORY</sourceObjSchema>
+<sourceObjName>REC_UPD_DTM</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date when record was last updated.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>95CD6DDB-32F3-390A-974B-95D130A7DFBF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E619CAD0-DA1C-2A0A-CDE5-D9E500B53CD3" name="PRS_OPL_PK_IN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_OPL_PK_IN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>E6262025-FEFF-F4E7-4AB2-34F7CF6A0470</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70735AA1-5D64-7C4B-43AA-92F558F93EE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD720C12-6372-09E8-D39A-5C9B9688DC63" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_OPL_I_ISC">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_OPL_I_ISC</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>69019EC5-3584-91B1-A7CF-2FFC22FB3428</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C015335-CCC2-AB0C-01DA-9DE9ECE3E3CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AA21E60-E70B-9FCB-CFD1-32F1CC0F5DD3" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_OPL_I_RIN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_OPL_I_RIN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>58569AF5-E467-572B-3BC4-BCD6C2AF897C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBA15219-F1FC-4BD3-0093-6A80FE50A190"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="188B0F7D-B74E-198C-B774-A22CA16D026B" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_OPL_PK_IN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_OPL_PK_IN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>C052EC88-4332-E1F0-F99B-7EC0CF2E29A0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70735AA1-5D64-7C4B-43AA-92F558F93EE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7901E06F-F0E0-14D3-A0A0-90F238864326" name="PRS_OPL_FK_RN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBA15219-F1FC-4BD3-0093-6A80FE50A190"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8ACF2B04-9482-4436-F459-3B34D086EF5F" name="PRS_OPL_FK_SC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C015335-CCC2-AB0C-01DA-9DE9ECE3E3CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

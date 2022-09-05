@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="038CD6EF-09C2-3B40-712D-8213E1091700" name="PRS_WBS">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 02:47:50 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="WBS_N" id="E47DF371-DBAC-803F-1CEE-7D9F2CD049DF">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 02:48:41 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WBS_AC_N" id="94EB7203-CC90-CDD7-CB97-DED51E2ADA8B">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 02:48:41 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WBS_DESC_T" id="676C8C7C-4565-1BB3-FB51-07252AE793F5">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 02:48:41 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTRL_AREA_T" id="34F1D8BF-C7C7-0D4E-D940-B99F6A3CEB86">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 03:08:04 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COST_CTR_T" id="8D303FB6-B06A-D140-0967-AC9CD0402B71">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 03:08:04 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PI1_STF_N" id="DFBF433B-0363-2D18-BD81-EE78602C374A">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 03:10:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFN_DEPT_C" id="52C7D1ED-BC61-2597-8C91-3C077CF206B3">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 03:11:12 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WBS_USERSTS_C" id="1A79744F-C9F0-E4E3-AE83-E308FF6E6240">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 03:13:02 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WBS_ACTIV_F" id="498B35E5-72F5-AB9F-CBE8-6845E8A36B2F">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 03:13:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEFUNCT_F" id="31271D84-227B-9141-E657-FF210D962D1B">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 03:35:29 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SRCE_SYS_C" id="C7B04744-0460-52B8-BBC0-A3FAF70F35B5">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2021-06-22 03:48:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Source system code sent to LMPRS by FS2 S4 Hana. E.g: LMPRS_PO, LMPRS_JL]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="345E8C2D-3C26-6169-0BFB-95C21A8AF931" name="PRS_PW_PK_WN">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-17 03:30:25 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E47DF371-DBAC-803F-1CEE-7D9F2CD049DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

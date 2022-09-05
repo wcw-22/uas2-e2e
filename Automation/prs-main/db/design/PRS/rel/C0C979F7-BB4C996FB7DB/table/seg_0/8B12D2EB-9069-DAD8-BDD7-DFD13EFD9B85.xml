@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B12D2EB-9069-DAD8-BDD7-DFD13EFD9B85" name="PRS_JOB_EXECUTION_PARAMS">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_JOB_EXECUTION_PARAMS</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table holds all information relevant to the JobParameters object. It contains 0 or more key/value pairs passed to a Job and serve as a record of the parameters a job was run with.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>CD10B84F-61EC-47BB-9726-19092BB57F20</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOB_EXECUTION_ID" id="B8323EEA-692E-21EE-ABE2-4267F0737E7C">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION_PARAMS</sourceObjSchema>
+<sourceObjName>JOB_EXECUTION_ID</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates the job execution the parameter entry belongs to.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>49389BC4-1892-247D-A926-C1F806FC089D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07867DBF-B8AC-4321-7EFF-B179C99E1C34" referredColumn="55E7EDE2-E4B0-D5E5-5B92-356D5F855C75"/>
+</associations>
+</Column>
+<Column name="TYPE_CD" id="4551C771-A394-0679-E51F-96AD4B9BBB14">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION_PARAMS</sourceObjSchema>
+<sourceObjName>TYPE_CD</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[String representation of the type of value stored, which can be either a string, date, long, or double.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>92A20B72-CC33-19E9-DF3C-01676228579C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KEY_NAME" id="92B203D3-E47C-0FA7-3104-0D6F47A39C46">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION_PARAMS</sourceObjSchema>
+<sourceObjName>KEY_NAME</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[The parameter key.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>9A83646C-77E8-A68B-56B9-C2F5030E332C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STRING_VAL" id="45FA62F2-7C24-9161-C788-FD53F666E56B">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION_PARAMS</sourceObjSchema>
+<sourceObjName>STRING_VAL</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Parameter value, if the type is string.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>10590510-C758-A6C8-C9E0-48B39BCA23D7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_VAL" id="0445F7B4-35CF-5B10-58B6-04F9A40732A6">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION_PARAMS</sourceObjSchema>
+<sourceObjName>DATE_VAL</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Parameter value, if the type is date.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>5AAA3128-D95D-52E3-2551-2A9C2AA4D450</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONG_VAL" id="7777C8D7-1BB9-EB21-7F25-3ECDCF2EC1D4">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION_PARAMS</sourceObjSchema>
+<sourceObjName>LONG_VAL</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Parameter value, if the type is a long.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>9CBB7615-387E-7479-C393-129BEBAD554C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOUBLE_VAL" id="C7E8533A-2000-6E36-258C-CA94BB2633D3">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION_PARAMS</sourceObjSchema>
+<sourceObjName>DOUBLE_VAL</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Parameter value, if the type is double.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>2647139E-0E34-DC5B-A9B2-336BE6FFEFEC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDENTIFYING" id="CEB84BF0-69EB-62FE-7D8F-6291D8387A5E">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_EXECUTION_PARAMS</sourceObjSchema>
+<sourceObjName>IDENTIFYING</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag indicating if the parameter contributed to the identity of the related JobInstance.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>D6F4D8FB-57F7-DA0B-3976-FADD12E0853C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A4E43A0-0109-6391-9E1F-1104502B7EFB" name="PRS_PJEP_FK_JEI">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8323EEA-692E-21EE-ABE2-4267F0737E7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

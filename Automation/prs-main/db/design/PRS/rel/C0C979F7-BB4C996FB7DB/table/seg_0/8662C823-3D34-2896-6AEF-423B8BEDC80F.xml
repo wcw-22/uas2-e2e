@@ -1,0 +1,215 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8662C823-3D34-2896-6AEF-423B8BEDC80F" name="PRS_INTERNAL_STORE">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 03:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[This table stores the GL account values that can be used in the LMPRS system.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INTL_STORE_N" id="23ED90FA-5EC4-7880-DC54-8631E1624934">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 03:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sequence number to identifiy an internal store.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPP_C" id="CB03D934-FBD8-5242-CCC6-B55D30249E23">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 07:42:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code to refer to supplier.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54BEA9A2-AEAA-BD0B-D7F5-8BB98A011E5F" referredColumn="36DA4F8E-2F6A-07C4-A5A7-A9D132905769"/>
+</associations>
+</Column>
+<Column name="WBS_AC_N" id="27D8D6F2-5FB4-43B7-1EC4-B3CC84132856">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 08:11:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[WBS for this internal store.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GL_AC_N" id="DD53D3EA-4148-3F13-EE66-192289D38C55">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:51:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Refer to GL account for the interal store.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHM_LOC_N" id="A46FC1CA-2965-79CA-8F00-ED094BBE9000">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 08:20:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Location ID from LMMS.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAC_C" id="55CE21FC-8664-D0F7-2F7A-0C9048B95628">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 07:35:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[The faculty the internal store belongs to.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0192F561-66F6-AD11-DE53-56FAD06AE69C" referredColumn="115F7FA0-5CE3-827D-2256-55E2F1562F16"/>
+</associations>
+</Column>
+<Column name="DEPT_C" id="C4D0FDBC-2A69-06CC-F2A0-CF43FBEE27E1">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 07:38:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[The department  the internal store belongs to.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35A22D10-6029-36B1-F692-2431B170BF50" referredColumn="7BE584AC-FA0F-B823-4C64-3AB813EB325C"/>
+</associations>
+</Column>
+<Column name="DEFUNCT_F" id="FB27BE8D-29A5-C39B-B245-F268CF5008B4">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 03:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag to denote if this GL account has been defunct.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_CREATEUSER_I" id="2A46926E-1129-3156-4ED1-E7776B61B6AD">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 08:26:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record created user id.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_CREATE_DTM" id="92D5B9D5-63C4-3907-5571-B035B99FBD6A">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 08:26:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record created date.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPDUSER_I" id="65CF35A2-DD31-D742-AE3A-24D75565481A">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 08:26:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record updated by user id.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPD_DTM" id="2AF93D4A-09CA-3B1F-F1FC-1D4C97D55D08">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 08:26:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record updated by date.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6C9E1EF-1C41-0FA2-174D-BE92FB199751" name="PRS_PIS_PK_IS">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 03:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sequence number to identify a internal store uniquely.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23ED90FA-5EC4-7880-DC54-8631E1624934"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F92B6AA-4837-23A3-D620-85BBEEA3B784" name="PRS_PIS_FK_FC">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 07:35:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55CE21FC-8664-D0F7-2F7A-0C9048B95628"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="275B4EEC-CD23-7A37-E0FD-72E18267721E" name="PRS_PIS_FK_DC">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 07:38:16 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4D0FDBC-2A69-06CC-F2A0-CF43FBEE27E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CE06E8F-5812-D007-5C67-CEE4CFBF2B7E" name="PRS_PIS_FK_SC">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-09-17 07:42:51 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB03D934-FBD8-5242-CCC6-B55D30249E23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="FACULTY" directorySegmentName="seg_0" id="0B0B8927-7543-020F-78C8-61538C504ACE">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 02:59:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FAC_OFFCTP_C" id="0021AF47-5C89-BA6C-C5C5-1E24C843D4EC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ISIS_GRPFACDEPT_C" id="02354E34-BAF4-49F2-1DBB-33D611F22082">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAP_FACEND_D" id="10A548EE-CAC3-5282-E754-9648EED09FA8">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FAC_C" id="115F7FA0-5CE3-827D-2256-55E2F1562F16">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 02:59:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FAC_OF_F" id="36B7134B-02E3-302A-4708-FFE6B9F5A21A">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAP_FACST_D" id="3DD76B41-023C-63F7-CFC4-36678AEEE697">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ISIS_ACADORGNUNIT_N" id="42217B5B-9333-E0D5-DF93-F49A5F223ABE">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FILEGRAD_URL_T" id="6694FBB5-B941-FE5C-7745-964C5D0959E3">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FAC_UPD_D" id="6D06287A-A943-15BB-BA86-B3C77C44E547">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAP_FAC_T" id="7AA299E4-F3AB-41B0-AED6-BE4376D8F515">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAP_OBJ_C" id="8B143E90-9DDE-64AE-B890-CBE718B3FC54">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FAC_T1" id="8E55F4B2-5B21-EBE9-1D6A-D7AD8FB6BBB8">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEFUNCT_F" id="CBDB49FB-EC82-4E62-138B-5F08ACF46887">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAP_FAC_C" id="D970829A-A575-33A8-9200-D4A34F16D8C5">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FAC_T" id="F76E3220-94F4-68BC-9E91-AF610F86499C">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LABBASE_C" id="FEB3E90B-97EA-3DA1-723B-4B2DBCAFCE49">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACTIV_C" id="FF1EF937-4709-6ED0-935B-9B4EB7A6A892">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 15:53:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="NC_FAC_PK_FC" id="EC433911-CA12-87BF-F145-A7B053CD5493">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 02:59:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="NC_FAC_UK_FC" id="34F75B0F-515B-8349-8C75-C60A68D23647">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 16:00:29 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="NC_FAC_UK_OC" id="5B413B73-5976-5576-1199-37A038F3B89C">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 16:01:06 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

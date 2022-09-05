@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="984A1BB8-217C-660A-4778-665306E58C31" name="Products">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:06:12 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="product_detail_json" id="7667DF38-E38C-6C76-1B84-04EA64AF6CD5">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:08:02 UTC</createdTime>
+<comment>For product from different category, different json schema is applided.&lt;br/&gt;For instance, if category is &apos;Chemical&apos;, a sample json is &lt;br/&gt;{&lt;br/&gt;physical_form:&quot;solid&quot;,&lt;br/&gt;unit_of_measure_code:&quot;KILO&quot;,&lt;br/&gt;packaging_size:&quot;1&quot;,&lt;br/&gt;&lt;br/&gt;}&lt;br/&gt;&lt;br/&gt;</comment>
+<commentInRDBMS>Product details in JSON format. Product from different category may use different format.</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Attribute>
+<Attribute name="product_reference_number" id="F9C18669-68AD-7337-4F18-3FD94C531980">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 09:32:44 UTC</createdTime>
+<comment>For chemical, it refers to LMMS.HMMS_PRS_CHM_CTG</comment>
+<commentInRDBMS>Reference id to the product details based on the product category</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="category_code" id="0ACAAB74-1BCA-FF97-FE74-D6C8AF99C3BB">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:16:25 UTC</createdTime>
+<comment>To identify classfication of the product. It is to facilitate the system to support purchase of variant goods such as chemicals, furnitures etc.</comment>
+<generatorID>BF9A9363-DBE7-52DF-FC06-2F608845C56B</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>7B89B064-FD2B-2914-D2C8-FE5847C6453A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+</Attribute>
+<Attribute name="request_number" id="8820D729-2F5E-A625-2F50-987F8B3D73D7">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:57:04 UTC</createdTime>
+<comment>There are 3 different kinds of request, &quot;PR&quot;,&quot;AOR&quot; and &quot;SQRR&quot;. The request number will be prefixed with &quot;pr-&quot;, &quot;aor-&quot; and &quot;sqrr-&quot; respectively.&lt;br/&gt;</comment>
+<generatorID>D7FE5640-1D26-4455-A29D-127943486F7F</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>98D3B413-D278-75C5-8480-F908B4233AEF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+<Attribute name="request_number1" id="43718EFD-7EAB-AFAE-1292-70E70D59B72D">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:57:04 UTC</createdTime>
+<comment>There are 3 different kinds of request, &quot;PR&quot;,&quot;AOR&quot; and &quot;SQRR&quot;. The request number will be prefixed with &quot;pr-&quot;, &quot;aor-&quot; and &quot;sqrr-&quot; respectively.&lt;br/&gt;</comment>
+<generatorID>D7FE5640-1D26-4455-A29D-127943486F7F</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>98D3B413-D278-75C5-8480-F908B4233AEF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+<Attribute name="lineitem_number" id="8C9502BD-DA3C-BD18-FB5A-2D75581F0117">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:57:04 UTC</createdTime>
+<comment>This is the lineitem number within a purchase request. it start from 1 for each new purchase request.</comment>
+<generatorID>D7FE5640-1D26-4455-A29D-127943486F7F</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>904F1091-45A7-05FE-59BA-0C458E8D23EF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7C38163D-4530-8827-2F3D-9BB4637D2AA5" name="Products PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:16:25 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0ACAAB74-1BCA-FF97-FE74-D6C8AF99C3BB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

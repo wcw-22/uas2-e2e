@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRSSUPPLIER" directorySegmentName="seg_0" id="0D2DDB1F-3845-DAEF-E42F-2E13A064D4B9">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 02:59:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CTRY_C" id="0D4C5192-8F5F-6201-F67B-17D1E4300900">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 02:59:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUPP_C" id="36DA4F8E-2F6A-07C4-A5A7-A9D132905769">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 02:59:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUPP_T" id="696EA539-6CB8-D43B-6171-2FBA1D63736F">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 02:59:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEFUNCT_F" id="84363EB2-44ED-FD64-159B-0D01DF11285F">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 18:49:38 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_PS_FK_CY" id="7EE1C406-AB39-1A22-8209-162274A3971F">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 02:59:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRS_PS_PK_SC" id="3C9C563A-D7CD-642D-7346-A1ACBFA5B78D">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 02:59:45 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

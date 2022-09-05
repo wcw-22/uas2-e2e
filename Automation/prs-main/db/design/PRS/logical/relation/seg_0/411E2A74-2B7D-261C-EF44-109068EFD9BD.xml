@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pr_award" directorySegmentName="seg_0" id="411E2A74-2B7D-261C-EF44-109068EFD9BD">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:27:28 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<sourcePk>944E9B75-CD69-5A55-B8D2-1522673CB7BF</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>14F85C68-8F26-81F8-A55D-076ECE3EBA06</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0FFD9B65-0297-5083-A3EF-34B4157999C3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

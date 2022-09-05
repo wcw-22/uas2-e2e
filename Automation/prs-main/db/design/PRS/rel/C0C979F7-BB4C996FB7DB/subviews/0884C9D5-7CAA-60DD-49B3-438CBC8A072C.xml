@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="PRS Fixed Delivery Address Table" id="0884C9D5-7CAA-60DD-49B3-438CBC8A072C">
+<createdBy>ccev1655</createdBy>
+<modifiedBy>niluc</modifiedBy>
+<createdTime>2019-06-04 07:37:07 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3DAE84B0-ECD3-A60B-C57E-BBD68242E74D" otype="Table" vid="C2936E43-042B-7BEB-0423-3DCAB11C80B8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="164" y="60" width="219" height="251"/>
+</OView>
+</objectViews>
+</Diagram>

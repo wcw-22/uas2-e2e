@@ -1,0 +1,352 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55170AE7-2F1B-62DA-8554-C6DB620D8E14" name="PRS_APPV_STS">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_APPV_STS</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table stores the Approval Status for the Purchase Requisition System.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>C5BA8E1D-01DF-9CE1-0EF2-D99E627FF2A6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="APPV_N" id="55C8CF2F-1389-A1F1-816B-B95982A5AA4F">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>APPV_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Oracle generated sequence number]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>8DA9C340-BE4C-CE73-0910-506237D536C2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APPV_USER_I" id="61D3D5E0-EC00-FB69-B3D2-E3B8AAF961D3">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>APPV_USER_I</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Approver Staff number ]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>7BEC0F1F-DA6F-2023-4AAB-09912E760228</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PR_N" id="50556D1A-23BC-C635-34B7-D67E31C36BE0">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>PR_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reference to Purchase Request Table.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>D50E4773-15B1-49EC-A084-3AAF7A737942</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="667FDF4C-FFF1-3A55-5C6A-27F3C2B6C3AA" referredColumn="9A0DCB1E-7803-F44B-ADED-4F5A6B7754C9"/>
+</associations>
+</Column>
+<Column name="APPV_TP_C" id="7D2D39EB-BC17-98AB-D120-91C70737CAF2">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>APPV_TP_C</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Approval Type ]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>F92EFD7D-8376-5CD7-91AA-4AFF74F078BC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90187C81-81BF-9820-2D5D-5A6737B4DDB3" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="APPV_STS_C" id="9AD5A01F-F83D-1EC9-1175-3BD4E735A5B4">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>APPV_STS_C</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Approval Status . Referenced to PRSCTable]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>65FF5DEF-B3C9-9443-CC61-359C6E0A3352</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5801FBF-D3A8-A6C6-1DE2-875D860E8098" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="REMK_T" id="95452A82-3D6C-92D4-C357-E90D5ECF66ED">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>REMK_T</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Remarks]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>9F30DBCA-EDD3-29D5-A50B-EAC0516B1ECC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPDUSER_I" id="83AF2AFF-9396-A645-DE64-0A483D18CA50">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>REC_UPDUSER_I</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Updated User.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>682291AA-B844-5734-E1A3-8E1BE6CB87AC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPD_DTM" id="FD9B61C0-0DAE-805D-8896-1FA671BD723A">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>REC_UPD_DTM</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Updated Date.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>4D5A2AC7-746E-0F5F-C622-E7FD6A53DDD8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PER_AUTHUSER_I" id="C99F61EC-6412-6C98-7281-A7A132C5E814">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>PER_AUTHUSER_I</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id of the person that this approver is the delegate for.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>2BCB405F-2881-FF85-C910-177AB3942C97</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTOAPPV_F" id="260A643E-4AA6-2224-E929-362ABFAB35AB">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>AUTOAPPV_F</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag to indicate whether it is auto-approve.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>3033DF48-6602-552F-B885-E3123726BF85</importedID>
+<constraintName>PRS_PAS_CK_AAF</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APPVR_ACCESSTP_C" id="E80C6DE0-FC16-EE20-9EB3-AA3DE32832E1">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_STS</sourceObjSchema>
+<sourceObjName>APPVR_ACCESSTP_C</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Role code to indicate approver's role.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>CD6E2C7C-4941-E126-7A67-8584A986FE49</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="775C60EC-AC4A-1672-FCA6-A042CD424B6F" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="776DA794-5309-CDAF-EAEE-1FF7656951B2" name="PRS_PAS_PK_AN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PAS_PK_AN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>2CA24EE7-D4E6-27E2-277F-DFC090D4D8C5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55C8CF2F-1389-A1F1-816B-B95982A5AA4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2864AC4-FA55-768A-D754-940FF7B6F0F5" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PAS_I_ASC">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PAS_I_ASC</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>7101571E-2283-E011-2F91-E8AE1BE39790</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AD5A01F-F83D-1EC9-1175-3BD4E735A5B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE877A22-5F36-5D55-D97F-908270406AE2" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PAS_I_ATC">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PAS_I_ATC</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>7B87F70A-7F50-6304-BB5D-8C8601933D6F</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D2D39EB-BC17-98AB-D120-91C70737CAF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="293F472F-E692-3E8C-56D7-54FF32C2191A" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PAS_I_AUI">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PAS_I_AUI</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>533B2B0D-220E-2771-C103-82282945BF33</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61D3D5E0-EC00-FB69-B3D2-E3B8AAF961D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE1CEF41-A3B1-102F-81E6-D6EB0FED2A7D" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PAS_I_PAI">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PAS_I_PAI</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>BE188D58-C102-1636-194B-726EF61BD337</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C99F61EC-6412-6C98-7281-A7A132C5E814"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC887E5C-E20D-8ED2-80BB-9F4BCD77C87D" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PAS_I_PRN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PAS_I_PRN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>3FBE5F18-76C7-77F6-512C-54DD0F2AEDEA</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50556D1A-23BC-C635-34B7-D67E31C36BE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE70F593-4DE2-B9A1-BA01-1177B9A5D0FB" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PAS_PK_AN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PAS_PK_AN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>68F45B5D-DA63-B792-243A-0804CCDBAD6D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55C8CF2F-1389-A1F1-816B-B95982A5AA4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="789D1922-35A0-14A9-27C5-8577599BE691" name="PRS_PAS_FK_PRN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50556D1A-23BC-C635-34B7-D67E31C36BE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E275190-E968-23C6-8607-C8303BA90F63" name="PRS_PAS_FK_AAC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E80C6DE0-FC16-EE20-9EB3-AA3DE32832E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A313E87-284F-CA09-6F10-F2964403F5C4" name="PRS_PAS_FK_ATC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D2D39EB-BC17-98AB-D120-91C70737CAF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="882AB4A0-656F-6EE1-2187-4B24A9EBECED" name="PRS_PAS_FK_ASC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AD5A01F-F83D-1EC9-1175-3BD4E735A5B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

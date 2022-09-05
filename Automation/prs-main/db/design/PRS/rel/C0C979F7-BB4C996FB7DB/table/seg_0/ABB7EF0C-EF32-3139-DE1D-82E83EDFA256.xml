@@ -1,0 +1,289 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABB7EF0C-EF32-3139-DE1D-82E83EDFA256" name="PRS_PERIODCONTRACT_PARTICS">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 08:43:03 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRDCON_SEQ_N" id="C4BD54F7-5A79-4FBC-925F-13F250A31893">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 08:45:14 UTC</createdTime>
+<commentInRDBMS>Auto generated seq no</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>PRS_PERIOD_CTRCT_SEQ</autoIncrementSequenceName>
+</Column>
+<Column name="CON_N" id="4A994A85-510C-76DC-A3A3-F7844BCB9B53">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 18:21:20 UTC</createdTime>
+<commentInRDBMS>Unique Contract Number</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CON_A" id="31D77A85-029A-4951-117B-4B6E8007CA12">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 08:51:23 UTC</createdTime>
+<commentInRDBMS>Contract Value</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRCY_C" id="E005FC2C-8582-13D4-AF93-1712E0AD63FE">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 08:51:23 UTC</createdTime>
+<commentInRDBMS>Currency</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<delegate>5B3CCC7A-BCED-E258-973A-8FC40A4CF574</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15900892-1C18-BB54-7CD7-8871DA49D09E" referredColumn="5B3CCC7A-BCED-E258-973A-8FC40A4CF574"/>
+</associations>
+</Column>
+<Column name="CON_DESC_T" id="F864E20F-A0D6-C557-1F21-6D5BBF0BC55E">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 18:54:18 UTC</createdTime>
+<commentInRDBMS>Contract Description</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CON_ST_D" id="B726E549-737C-FD6F-883B-F2162FADF6BD">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 19:22:48 UTC</createdTime>
+<commentInRDBMS>Contract Start Date</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CON_END_D" id="146FDB90-630F-D8D3-5E0F-D80CD1B8CFE3">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 19:25:21 UTC</createdTime>
+<commentInRDBMS>Contract End Date</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CON_LVL_C" id="9A6A03A3-C979-D25F-659B-CE3DB1D3273D">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 19:45:26 UTC</createdTime>
+<commentInRDBMS>Contract Applicable For (C- Campus, F-Faculty, D-Department) (Reference to PRSCTABLE)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<delegate>7CA56ED8-505B-0151-6CF4-C3812B1040F4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01D2682A-E66D-392F-938B-B00F72FECB61" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="CON_TP_C" id="AC3BBEA4-CD99-351F-7706-5320C39DF7C9">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 19:45:26 UTC</createdTime>
+<commentInRDBMS>Contract Type (NUS/Other)(Reference to PRSCTABLE)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<delegate>7CA56ED8-505B-0151-6CF4-C3812B1040F4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E1A5147-27E3-1843-1ADC-8F5110B4853F" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="CON_CAT_C" id="D403C741-6FFC-E29E-CBF0-5C15F2BB9781">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 19:45:26 UTC</createdTime>
+<commentInRDBMS>Contract Category(Reference to PRSCTABLE)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<delegate>7CA56ED8-505B-0151-6CF4-C3812B1040F4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4682CD06-5D63-7BFF-2209-34266E0DDF95" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="CON_STS_C" id="1C96A275-D080-4CBA-AB3D-95DEE712E3A6">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 19:47:45 UTC</createdTime>
+<commentInRDBMS>Contract Status Code (eg: Draft, Published, Defunct) (Reference to PRSCTABLE)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<delegate>7CA56ED8-505B-0151-6CF4-C3812B1040F4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7768D145-DF1E-E8B4-1362-86A9692CC07B" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="REC_CREATE_DTM" id="FF11F869-126A-15E4-05BF-AC6B38CA6F75">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:30:44 UTC</createdTime>
+<commentInRDBMS>Record Created Date</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPD_DTM" id="E114077A-18BA-2507-DADE-20C84ACF5C89">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:30:44 UTC</createdTime>
+<commentInRDBMS>Record Updated Date</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_CREATEUSER_I" id="33869A3D-9E19-C9F7-2118-03AA2E67C896">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:31:26 UTC</createdTime>
+<commentInRDBMS>Record Created User</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPDUSER_I" id="EF9B6AD0-BAFE-6D5D-B172-47471C9378AA">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:31:54 UTC</createdTime>
+<commentInRDBMS>Record Updated User</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E200A04-B092-6040-F0D7-EC8593C1DBEA" name="PRS_PCP_PK_PC">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 08:45:14 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4BD54F7-5A79-4FBC-925F-13F250A31893"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F66DE5E-1875-5E32-F7BC-A5EACC84F288" name="PRS_PCP_UN_CN">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-24 22:39:13 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A994A85-510C-76DC-A3A3-F7844BCB9B53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A6BAA73-E515-9512-7E54-5667B6ADF157" name="PRS_PPC_I_CN">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 09:48:46 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A994A85-510C-76DC-A3A3-F7844BCB9B53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D63DE8B-AA8A-804F-236A-0850CF64EA49" name="PRS_PCP_FK_CC">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 08:51:23 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E005FC2C-8582-13D4-AF93-1712E0AD63FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B18C551-6EAF-DD31-E3F6-AC4F722B8A58" name="PRS_PCP_FK_CS">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-24 18:22:01 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C96A275-D080-4CBA-AB3D-95DEE712E3A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8D3A64E-D1FE-6DA2-24C7-694A6A14C76D" name="PRS_PCP_FK_CA">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-24 18:36:04 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D403C741-6FFC-E29E-CBF0-5C15F2BB9781"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="434FF66B-3D3B-AAF8-C4F4-EA0AD62B3CBE" name="PRS_PCP_FK_CL">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-24 18:38:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A6A03A3-C979-D25F-659B-CE3DB1D3273D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A90C719-12F8-EFA2-06AF-B11BA27B1E9A" name="PRS_PCP_FK_CT">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-24 18:46:25 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC3BBEA4-CD99-351F-7706-5320C39DF7C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

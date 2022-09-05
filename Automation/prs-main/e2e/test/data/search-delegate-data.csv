@@ -1,0 +1,79 @@
+Description,Scenario,LoginID,Role,Type,NUSNETID,DurationFrom,DurationTo,isValidationError,isNoRecordFound,isResultFound,ResultCount,ErrorMessage
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate empty inputs,ELCKMY,1,,,,,Y,,,,Please enter a criteria to perform the search.
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate invalid NUSNETID,ELCKMY,1,,ABCDEFGH,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate NUSNETID field with special chars,ELCKMY,1,,AB=B,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate valid NUSNETID 1,ELCKMY,1,,DBSLYC,,,,,Y,1,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate valid NUSNETID 2,ELCKMY,1,,CHMLX,,,,,Y,2,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate invalid long NUSNET ID,ELCKMY,1,,TESTTESTTESTTESTTES,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate empty To Date,ELCKMY,1,,,1/7/2021,,Y,,,,To Date is required.
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate empty From Date,ELCKMY,1,,,,31/7/2021,Y,,,,From Date is required.
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate invalid From date,ELCKMY,1,,,TEST,,Y,,,,Date is invalid
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate invalid To date,ELCKMY,1,,,,TEST,Y,,,,Date is invalid
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Date fields 1,ELCKMY,1,,,27/5/2019,31/12/2021,,,Y,17,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Date fields 2,ELCKMY,1,,,27/5/2019,30/9/2021,,,Y,9,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Date fields 3,ELCKMY,1,,,2/8/2021,31/12/2021,,,Y,10,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Radio button Delegate,ELCKMY,1,1,,,,,,Y,18,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Radio button Approver,ELCKMY,1,2,,,,,,Y,18,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Delegate and invalid NUSNET ID,ELCKMY,1,1,ABCDEFGH,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Approver and invalid NUSNET ID,ELCKMY,1,2,ABCDEFGH,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Delegate and valid NUSNET ID 1,ELCKMY,1,1,DBSLYC,,,,Y,,,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Approver and valid NUSNET ID 1,ELCKMY,1,2,DBSLYC,,,,,Y,1,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Delegate and valid NUSNET ID 2,ELCKMY,1,1,CHMLX,,,,,Y,2,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Approver and valid NUSNET ID 2,ELCKMY,1,2,CHMLX,,,,Y,,,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Radio button and Date fields 1,ELCKMY,1,1,,1/1/2019,31/12/2021,,,Y,17,
+LMPRSManageDelegate-NUS_ADMIN,NUS_ADMIN to validate Radio button and Date fields 2,ELCKMY,1,2,,1/1/2019,31/12/2021,,,Y,17,
+LMPRSManageDelegate-NUS_ADMIN,"NUS_ADMIN to validate Radio button, Date fields and NUSNET ID field 1",ELCKMY,1,1,CHMLX,1/1/2019,31/12/2021,,,Y,2,
+LMPRSManageDelegate-NUS_ADMIN,"NUS_ADMIN to validate Radio button, Date fields and NUSNET ID field ",ELCKMY,1,1,CHMLX,1/1/2019,1/10/2021,,,Y,1,
+LMPRSManageDelegate-NUS_ADMIN,"NUS_ADMIN to validate Radio button, Date fields and NUSNET ID field 3",ELCKMY,1,2,CHMLX,1/1/2019,31/12/2021,,Y,,,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate empty inputs,ELCKMY,2,,,,,Y,,,,Please enter a criteria to perform the search.
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate invalid NUSNETID,ELCKMY,2,,ABCDEFGH,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate NUSNETID field with special chars,ELCKMY,2,,AB=&,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate valid NUSNETID 1,ELCKMY,2,,DBSLYC,,,,,Y,1,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate valid NUSNETID 2,ELCKMY,2,,CHMLX,,,,,Y,2,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate invalid long NUSNET ID,ELCKMY,2,,TESTTESTTESTTESTTES,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate empty To Date,ELCKMY,2,,,1/7/2021,,Y,,,,To Date is required.
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate empty From Date,ELCKMY,2,,,,31/7/2021,Y,,,,From Date is required.
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate invalid From date,ELCKMY,2,,,TEST,,Y,,,,Date is invalid
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate invalid To date,ELCKMY,2,,,,TEST,Y,,,,Date is invalid
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Date fields 1,ELCKMY,2,,,27/5/2019,31/12/2021,,,Y,6,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Date fields 2,ELCKMY,2,,,27/5/2019,30/9/2021,,,Y,2,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Date fields 3,ELCKMY,2,,,2/8/2021,31/12/2021,,,Y,4,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Radio button Delegate,ELCKMY,2,1,,,,,,Y,6,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Radio button Approver,ELCKMY,2,2,,,,,,Y,6,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Delegate and invalid NUSNET ID,ELCKMY,2,1,ABCDEFGH,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Approver and invalid NUSNET ID,ELCKMY,2,2,ABCDEFGH,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Delegate and valid NUSNET ID 1,ELCKMY,2,1,DBSLYC,,,,Y,,,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Approver and valid NUSNET ID 1,ELCKMY,2,2,DBSLYC,,,,,Y,1,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Delegate and valid NUSNET ID 2,ELCKMY,2,1,CHMLX,,,,,Y,2,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Approver and valid NUSNET ID 2,ELCKMY,2,2,CHMLX,,,,Y,,,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Radio button and Date fields 1,ELCKMY,2,1,,1/1/2019,31/12/2021,,,Y,6,
+LMPRSManageDelegate-Faculty_ADMIN,Faculty_ADMIN to validate Radio button and Date fields 2,ELCKMY,2,2,,1/1/2019,31/12/2021,,,Y,6,
+LMPRSManageDelegate-Faculty_ADMIN,"Faculty_ADMIN to validate Radio button, Date fields and NUSNET ID field 1",ELCKMY,2,1,CHMLX,1/1/2019,31/12/2021,,,Y,2,
+LMPRSManageDelegate-Faculty_ADMIN,"Faculty_ADMIN to validate Radio button, Date fields and NUSNET ID field ",ELCKMY,2,1,CHMLX,1/1/2019,1/10/2021,,,Y,1,
+LMPRSManageDelegate-Faculty_ADMIN,"Faculty_ADMIN to validate Radio button, Date fields and NUSNET ID field 3",ELCKMY,2,2,CHMLX,1/1/2019,31/12/2021,,Y,,,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate empty inputs,ELCKMY,3,,,,,Y,,,,Please enter a criteria to perform the search.
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate invalid NUSNETID,ELCKMY,3,,ABCDEFGH,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate NUSNETID field with special chars,ELCKMY,3,,AB=&,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate valid NUSNETID 1,ELCKMY,3,,BCHTMSY,,,,,Y,1,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate valid NUSNETID 2,ELCKMY,3,,CHEIAK,,,,,Y,1,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate invalid long NUSNET ID,ELCKMY,3,,TESTTESTTESTTESTTES,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate empty To Date,ELCKMY,3,,,1/7/2021,,Y,,,,To Date is required
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate empty From Date,ELCKMY,3,,,,31/7/2021,Y,,,,From Date is required
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate invalid From date,ELCKMY,3,,,TEST,,Y,,,,Date is invalid
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate invalid To date,ELCKMY,3,,,,TEST,Y,,,,Date is invalid
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Date fields 1,ELCKMY,3,,,27/5/2019,31/12/2021,,,Y,2,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Date fields 2,ELCKMY,3,,,27/5/2019,30/9/2021,,,Y,1,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Date fields 3,ELCKMY,3,,,2/8/2021,31/12/2021,,,Y,1,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Radio button Delegate,ELCKMY,3,1,,,,,,Y,2,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Radio button Approver,ELCKMY,3,2,,,,,,Y,2,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Delegate and invalid NUSNET ID,ELCKMY,3,1,ABCDEFGH,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Approver and invalid NUSNET ID,ELCKMY,3,2,ABCDEFGH,,,Y,,,,NUSNET ID is invalid.
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Delegate and valid NUSNET ID 1,ELCKMY,3,1,BCHTMSY,,,,Y,,,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Approver and valid NUSNET ID 1,ELCKMY,3,2,BCHTMSY,,,,,Y,1,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Delegate and valid NUSNET ID 2,ELCKMY,3,1,CHEIAK,,,,,Y,1,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Approver and valid NUSNET ID 2,ELCKMY,3,2,CHEIAK,,,,Y,,,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Radio button and Date fields 1,ELCKMY,3,1,,1/1/2019,31/12/2021,,,Y,2,
+LMPRSManageDelegate-Department_ADMIN,Department_ADMIN to validate Radio button and Date fields 2,ELCKMY,3,2,,1/1/2019,31/12/2021,,,Y,2,
+LMPRSManageDelegate-Department_ADMIN,"Department_ADMIN to validate Radio button, Date fields and NUSNET ID field 1",ELCKMY,3,1,CHEIAK,1/1/2019,31/12/2021,,,Y,1,
+LMPRSManageDelegate-Department_ADMIN,"Department_ADMIN to validate Radio button, Date fields and NUSNET ID field ",ELCKMY,3,1,CHEIAK,1/1/2019,1/10/2021,,Y,,,
+LMPRSManageDelegate-Department_ADMIN,"Department_ADMIN to validate Radio button, Date fields and NUSNET ID field 3",ELCKMY,3,2,CHEIAK,1/1/2019,31/12/2021,,Y,,,

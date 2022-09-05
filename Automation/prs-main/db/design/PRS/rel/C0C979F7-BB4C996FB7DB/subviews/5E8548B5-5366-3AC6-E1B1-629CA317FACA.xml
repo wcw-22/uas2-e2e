@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Country Table" id="5E8548B5-5366-3AC6-E1B1-629CA317FACA">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-15 03:42:47 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="65D12F31-EE3C-DBD4-7E6D-E23BCD08AEBE" otype="Table" vid="9C801D3B-BE2D-857A-E8B8-93DA4237A363">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="57" y="53" width="196" height="81"/>
+</OView>
+</objectViews>
+</Diagram>

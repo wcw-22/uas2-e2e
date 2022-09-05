@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRS_INTERNAL_STORE" directorySegmentName="seg_0" id="8662C823-3D34-2896-6AEF-423B8BEDC80F">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="INTL_STORE_N" id="23ED90FA-5EC4-7880-DC54-8631E1624934">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WBS_AC_N" id="27D8D6F2-5FB4-43B7-1EC4-B3CC84132856">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REC_CREATEUSER_I" id="2A46926E-1129-3156-4ED1-E7776B61B6AD">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REC_UPD_DTM" id="2AF93D4A-09CA-3B1F-F1FC-1D4C97D55D08">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FAC_C" id="55CE21FC-8664-D0F7-2F7A-0C9048B95628">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REC_UPDUSER_I" id="65CF35A2-DD31-D742-AE3A-24D75565481A">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REC_CREATE_DTM" id="92D5B9D5-63C4-3907-5571-B035B99FBD6A">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CHM_LOC_N" id="A46FC1CA-2965-79CA-8F00-ED094BBE9000">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPT_C" id="C4D0FDBC-2A69-06CC-F2A0-CF43FBEE27E1">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUPP_C" id="CB03D934-FBD8-5242-CCC6-B55D30249E23">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEFUNCT_F" id="FB27BE8D-29A5-C39B-B245-F268CF5008B4">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_PIS_FK_FC" id="0F92B6AA-4837-23A3-D620-85BBEEA3B784">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_PIS_FK_DC" id="275B4EEC-CD23-7A37-E0FD-72E18267721E">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_PIS_FK_SC" id="9CE06E8F-5812-D007-5C67-CEE4CFBF2B7E">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRS_PIS_PK_IS" id="D6C9E1EF-1C41-0FA2-174D-BE92FB199751">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

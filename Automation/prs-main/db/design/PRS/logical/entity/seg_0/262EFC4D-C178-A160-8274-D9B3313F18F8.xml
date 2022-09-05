@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="262EFC4D-C178-A160-8274-D9B3313F18F8" name="Quotations">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:28:10 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="quotation_number" id="0885ACB7-E8B3-8545-756A-085C6F74DFA2">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:52:17 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+</Attribute>
+<Attribute name="supplier_code" id="B90927BA-2D9D-A6EA-BA91-57F3687C631A">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:28:26 UTC</createdTime>
+<comment>Will there be a table for suppliers?</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+</Attribute>
+<Attribute name="quotation_amount" id="03C7E91A-5037-BACB-160B-8756296B9591">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:28:50 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="request_number" id="9FF91A0B-8129-2A12-85E0-F3EB207D0A34">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:55:48 UTC</createdTime>
+<comment>There are 3 different kinds of request, &quot;PR&quot;,&quot;AOR&quot; and &quot;SQRR&quot;. The request number will be prefixed with &quot;pr-&quot;, &quot;aor-&quot; and &quot;sqrr-&quot; respectively.&lt;br/&gt;</comment>
+<generatorID>B6389505-6FDD-A619-15EC-96AE3F505441</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>4C03E305-CCFA-5F67-0EFA-0ED1D3990336</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="86DE1910-11FE-2E49-09EE-64BCC8C23706" name="Quotations PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:53:09 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0885ACB7-E8B3-8545-756A-085C6F74DFA2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

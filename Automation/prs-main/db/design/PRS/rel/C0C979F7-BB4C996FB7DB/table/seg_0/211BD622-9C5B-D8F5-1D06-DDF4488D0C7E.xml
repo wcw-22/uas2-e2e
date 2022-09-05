@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="211BD622-9C5B-D8F5-1D06-DDF4488D0C7E" name="PRS_CONTRACT_UTILISATION">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-07 15:13:22 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<ordsAlias>table_61</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CON_UTIL_N" id="D765AA1B-9058-D4B2-BCB3-8F1408D20F74">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-07 15:14:27 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CON_N" id="34A80EA4-1947-C386-6A1E-47B236FDE53E">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 01:44:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CON_UTIL_A" id="A1C2D80E-C73C-7849-BA67-34E3B074F802">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-07 15:23:08 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SRCE_TP_C" id="1537CF6E-D638-846A-6C67-F8F5B9D4E584">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-08 12:31:21 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7A43F32-E7CC-F1AA-A73B-7585FB0FE061" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="REC_CREATE_DTM" id="2C6D3D22-B00C-4888-C309-061554693CC0">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-14 15:14:36 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB097555-DCD9-D99C-7DD5-A2985E73FD36" name="PRS_PCU_PK_CU">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-07 15:25:25 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D765AA1B-9058-D4B2-BCB3-8F1408D20F74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73ED2FB2-F614-657E-58FC-40506FFB6944" name="PRS_PCU_FK_ST">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-08 12:31:58 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1537CF6E-D638-846A-6C67-F8F5B9D4E584"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

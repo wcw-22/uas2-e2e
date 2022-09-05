@@ -1,0 +1,254 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C9284A8-E9B9-A1D9-3FC1-7647A381101F" name="PRS_JOURNAL">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_JOURNAL</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[This table captures journal details (debit/credit entries) for items collected by departments (e.g. laboratories)]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>C5F85543-75DF-03C0-A2DC-08FB7DA7F0B1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JRNL_N" id="C5903D1E-8F86-C3F1-A4CA-C1C3B59FD956">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>JRNL_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Journal sequence number to uniquely identify the debit/credit entries of items collected]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>57D3FA6E-BA5C-F65D-3EF3-D965F1505B06</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLLECT_N" id="760C18AB-457E-AE26-5FD2-10B9A43DFED2">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>COLLECT_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique number assigned to items that have been collected by the department]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>2C45B560-6D93-E162-3E74-5C189453F690</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32A93BFA-5DE9-379E-85EB-B9F3DD3FAC59" referredColumn="313976C0-B460-8DEC-3F03-742A4EF78351"/>
+</associations>
+</Column>
+<Column name="AC_N" id="49920542-A34F-A913-09B8-F56C8779C63A">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>AC_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Account assignment number of the purchasing record when items have been collected]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>9BBE3203-F58B-DEBC-B0BB-E86C122CE6F3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WBS_AC_N" id="563B8DE7-FB0E-B18D-416D-8D653E8D62AF">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>WBS_AC_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[WBS account number of the purchasing record when items have been collected]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>E09DBDD1-1728-8CAF-5F50-CFBCFCB04036</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GL_AC_N" id="A88CBA9A-C8EC-3B59-2CEF-1DF1089F46D9">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>GL_AC_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[GL account number of the purchasing record when items have been collected]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>084B5AB2-1C32-BD75-D453-0964277D8A07</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JRNL_ITEMSEQ_N" id="72FF072E-7FD1-CA5A-E37B-FB15C5AF0E33">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>JRNL_ITEMSEQ_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Journal item sequence number assigned by Office of Finance. E.g. 01, 02]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>D7D0FAE4-7777-927B-FA4F-1617E4864380</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JRNL_DBCR_C" id="032E8EC3-2CCA-439D-705E-38CB06E887BC">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>JRNL_DBCR_C</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code to indicate the type of journal entries, whether it is for debit or credit]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>FD1C1B67-227B-7C2C-72A1-1B1F3CE703FA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED4418C8-DF26-C693-3FD7-7EECA2369BCE" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="JRNL_ITEM_A" id="F6F0D87B-30F2-EE11-A566-0BDAC02B23F5">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>JRNL_ITEM_A</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Amount/Price of the item collected]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>33048BF7-D718-5264-D846-C7808E74859E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,20,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JRNL_ITEMDESC_T" id="7CA54962-04E1-84DB-4467-711C4CDDEA73">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>JRNL_ITEMDESC_T</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Item description. It may be the item reference number]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>3619E88D-137E-2799-967D-6E41434AA21A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_CREATESTF_N" id="4C187F7C-327C-EDB4-3ED2-4436DC8895C4">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>REC_CREATESTF_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff number of the staff who created the record. Validation is done by the application.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>B8BB43B6-1F8C-3D93-0494-9CE1EC287330</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_CREATE_DTM" id="130F436B-8059-726C-C523-25103BE9631F">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOURNAL</sourceObjSchema>
+<sourceObjName>REC_CREATE_DTM</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record creation date]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>970208C2-3E62-B517-5A41-667D85FA9518</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB19686F-3C33-CFF4-4E07-82C762576C27" name="PRS_PJN_PK_JN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PJN_PK_JN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>E814A9A0-C590-8296-4062-0836B1B1EBEC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5903D1E-8F86-C3F1-A4CA-C1C3B59FD956"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="657D45A6-D3C9-D26A-8245-A707AD8F81C6" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PJN_PK_JN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PJN_PK_JN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>F4993F79-319C-A2DB-F869-4DE752C7B900</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5903D1E-8F86-C3F1-A4CA-C1C3B59FD956"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACB07B04-8B9F-2888-8823-DD26A6ACA058" name="PRS_PJN_FK_DC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="032E8EC3-2CCA-439D-705E-38CB06E887BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B405BFC9-5AE8-59BA-74DB-F5BA071073FA" name="PRS_PJN_FK_CN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="760C18AB-457E-AE26-5FD2-10B9A43DFED2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

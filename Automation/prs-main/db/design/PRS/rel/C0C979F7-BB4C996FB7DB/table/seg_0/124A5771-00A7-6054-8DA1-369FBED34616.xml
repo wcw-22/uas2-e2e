@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="124A5771-00A7-6054-8DA1-369FBED34616" name="PRS_INBOUND_STG">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-09 10:02:24 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INBOUND_N" id="873DDB94-2F6E-A3CB-1C12-5F39710A0662">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-09 10:04:23 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INBOUND_TP_C" id="F7F2DDD7-E291-D3DE-A9E4-CDA7FB7B64DB">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-09 10:04:23 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDBFDFE5-EA8E-236D-D61A-C5972CE0B5D7" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="REC_CREATE_DTM" id="AFE2B5AC-45BC-EAD6-94A5-01BBA8A635AD">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-09 10:04:50 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INBOUND_PROCSTS_C" id="B49C5688-E0D1-CFE8-5E21-B873BA1AEF94">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-10 05:18:04 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C53C1D87-0A23-1EDD-0ACC-C6C204D66E58" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="INTGR_TRAN_N" id="18FE49E2-914B-C113-BB77-7E5D471EDAB6">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 13:52:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4143C71C-BDC6-D534-85E1-037419096D73" referredColumn="C379329B-4331-5A3D-DC8A-312B94336D9D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F3F3C32-C7F5-A733-2169-5EBF50CA96AD" name="PRS_PIS_PK_IN">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-09 10:05:10 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="873DDB94-2F6E-A3CB-1C12-5F39710A0662"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58EA626B-1F85-BA6A-7D23-74E347CC7C9B" name="PRS_PIS_FK_ITC">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-09 10:05:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7F2DDD7-E291-D3DE-A9E4-CDA7FB7B64DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B792944-266B-C383-6BAC-6AA7A9471482" name="PRS_PIS_FK_IPC">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-10 07:17:02 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B49C5688-E0D1-CFE8-5E21-B873BA1AEF94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F1B8C63-26D5-C74C-6AC2-D0C8C44E4127" name="PRS_PIS_FK_ITN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:46:36 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18FE49E2-914B-C113-BB77-7E5D471EDAB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,271 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E715926-5D46-35FA-5D0E-382274183682" name="PRS_PO_LINEITEM">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-04-29 19:17:30 UTC</createdTime>
+<generatorID>984A1BB8-217C-660A-4778-665306E58C31</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LINEITEM_N" id="94B28086-9F71-7D2C-46C1-39A81021F30F">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-04-29 19:17:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Oracle generated sequence number]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PO_N" id="B0D88DD0-EFF4-57E1-648D-EBB7A1C85FAA">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-04-29 19:17:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[purchase order number]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B73CF1C3-0642-439C-3F18-09DD53F2E4F8" referredColumn="554EA086-BD10-8417-3285-09AA565C772F"/>
+</associations>
+</Column>
+<Column name="QTY_Q" id="3461CB69-9D4E-9B03-A59A-AB1A17794ABD">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-04-29 19:17:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantity]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOT_AMT_A" id="A89DBFB6-847B-6C0D-B6E6-6D0BBB86BA49">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-04-29 19:29:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total Amount]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_CREATE_DTM" id="95501DA9-1B63-C006-C0CC-1CEA66949003">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-04-29 19:17:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[CREATED DATE]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPD_DTM" id="15449B1B-82C0-BEB8-016B-12E5681BD5D0">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-04-29 19:17:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[UPDATED DATE]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PO_LINEITEM_N" id="1C4D6049-B614-D0E1-506B-8339D8048C9E">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 18:28:02 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MSR_UNIT_C" id="A1EB1D3D-3D7E-441E-DF75-64A8C58EB39A">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 18:28:02 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPRICE_A" id="2F3BC213-6347-43E8-3DAB-10B3D82DCB58">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 18:28:02 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_DESC_T" id="92C93236-BEA6-F4B5-076C-35B25388F284">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 18:28:02 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_STS_C" id="C7F07899-01B3-FDC1-970A-DC9479CA22BA">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 18:28:02 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E2B0819-5638-CBF8-6CA7-7B8C4864F64E" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="REMK_T" id="974AE528-2BDE-35B7-C491-A2041AE11708">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 18:28:02 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POLI_CON_N" id="A757F919-781C-9AB6-D99C-A6DA91ED6B9F">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-07 15:27:07 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PR_LINEITEM_N" id="99E5887D-014F-4517-6BA4-A870AAC79D2F">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 03:08:57 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="979665AE-7502-1921-D740-50F82560BEB4" referredColumn="17E37926-2557-E6FE-246E-ABE97549A458"/>
+</associations>
+</Column>
+<Column name="DOWNPAYMT_P" id="61FDE610-ACDE-D6CB-0648-F6DF8862BFB8">
+<createdBy>ccev2404</createdBy>
+<createdTime>2021-06-08 02:22:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOWNPAYMT_A" id="A1F981A4-D825-0BF3-3036-508EF9ED36B8">
+<createdBy>ccev2404</createdBy>
+<createdTime>2021-06-08 02:22:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOWNPAYMT_DUE_D" id="955FD686-DFD5-EE27-4EEA-A5A6FAAC2AB7">
+<createdBy>ccev2404</createdBy>
+<createdTime>2021-06-08 02:22:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELV_F" id="4771278C-2E99-9C70-07E3-8AFAAE48A5F9">
+<createdBy>ccev2404</createdBy>
+<createdTime>2021-06-08 02:22:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F17357AB-6737-5A9D-14CB-B63BA70C572B" name="PRS_PPOL_PK_LN">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-04-29 19:17:30 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94B28086-9F71-7D2C-46C1-39A81021F30F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DDCEE87-5517-B679-1BBF-8C94C6099E04" name="PRS_PPOL_FK_PN">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-04-30 00:01:33 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0D88DD0-EFF4-57E1-648D-EBB7A1C85FAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D77174C3-C41F-46C9-120D-2BA6378204B9" name="PRS_PPOL_FK_ISC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-26 18:30:15 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7F07899-01B3-FDC1-970A-DC9479CA22BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAB6E582-4BFD-96B2-8244-5191D7DC2E71" name="PRS_PPOL_FK_PRLN">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 03:08:57 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99E5887D-014F-4517-6BA4-A870AAC79D2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

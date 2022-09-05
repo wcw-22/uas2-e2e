@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="From_RM_Audit Table" id="3785B44B-56CC-F353-2260-F316E9E76E4C">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:17 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>649181E7-5504-7BB4-11EF-6AA3F3DA1263</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="6F927B86-5B22-AE5C-F4B8-EAB425E7DA50" otype="Entity" vid="968CD192-708C-64C2-E67D-1C5D293816C3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="57" y="234" width="317" height="176"/>
+<generatorID>30CC7060-96DF-33DB-438B-9F8CC3B644CA</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="BE766733-00A7-9E46-7B0B-5768E73997D6" otype="Entity" vid="33438829-6A4B-D6C2-CEBF-B7478E48EE66">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="60" y="70" width="207" height="110"/>
+<generatorID>FB5DAC2C-D4BD-A90D-F306-8220BF9CE22B</generatorID>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="20F6CA01-5D9C-365D-456C-BF4829285646" otype="Relation" vid_source="33438829-6A4B-D6C2-CEBF-B7478E48EE66" vid_target="968CD192-708C-64C2-E67D-1C5D293816C3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="163" y="180"/>
+<point x="163" y="234"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="53A614E8-6CDE-B8E9-FBA9-8CB271483D47" otype="Relation" vid_source="33438829-6A4B-D6C2-CEBF-B7478E48EE66" vid_target="968CD192-708C-64C2-E67D-1C5D293816C3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="173" y="180"/>
+<point x="173" y="234"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

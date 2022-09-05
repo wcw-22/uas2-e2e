@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Supplier Table" id="6F246DDD-2714-E59D-1449-430BC276C65E">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 06:43:07 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="0D2DDB1F-3845-DAEF-E42F-2E13A064D4B9" otype="Table" vid="A0F87AD1-3085-295E-26CC-359B640F3D32">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="64" y="45" width="271" height="115"/>
+</OView>
+</objectViews>
+</Diagram>

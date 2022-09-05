@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="62CC93E6-1249-9C9C-D0DE-42715284A82F" containerWithKeyObject="B80FD513-1C00-227A-A150-FDC3EA370B91" localFKIndex="1144B28A-4BD1-8485-F628-0AE9F268CDFF" name="PRS_PSEC_FK_SEI">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PSEC_FK_SEI</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>F8FE75F4-23A2-718B-587D-4FE276D644AA</importedID>
+<referredTableLongName>PRSDBM.PRS_STEP_EXECUTION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>72327F97-D89A-23F4-2FF9-A74F92E0BA8B</referredTableID>
+<keyObject>60FE38CE-8E44-4194-CD2B-757F266BEDC2</keyObject>
+<referredKeyID>60FE38CE-8E44-4194-CD2B-757F266BEDC2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>STEP_EXECUTION_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

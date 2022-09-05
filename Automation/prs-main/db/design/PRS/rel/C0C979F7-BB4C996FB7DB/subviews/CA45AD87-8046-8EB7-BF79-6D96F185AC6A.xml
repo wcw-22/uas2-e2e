@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Inbound Staging Table" id="CA45AD87-8046-8EB7-BF79-6D96F185AC6A">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-09 10:01:54 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="124A5771-00A7-6054-8DA1-369FBED34616" otype="Table" vid="69B653BE-665B-06CD-B6E9-EA68A6E43FB8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="412" y="212" width="286" height="148"/>
+</OView>
+</objectViews>
+</Diagram>

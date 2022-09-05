@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9390A69E-C970-C26F-4CC0-940F3257B931" name="PRS_PURCHASE_LINEITEMPRDC">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-20 07:07:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table stores Line item product details Information.]]></commentInRDBMS>
+<generatorID>984A1BB8-217C-660A-4778-665306E58C31</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<ordsAlias>prs_pr_lineitem_prdc</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRDC_N" id="42D727B0-ECB8-2306-6BAC-557E07FF2B42">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-20 07:07:52 UTC</createdTime>
+<comment><![CDATA[It is surrogate key]]></comment>
+<commentInRDBMS><![CDATA[Oracle generated sequence number.]]></commentInRDBMS>
+<generatorID>21377C05-0C66-7558-886A-6FD44632E1FE</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LINEITEM_N" id="1791BCCC-362C-B09D-6102-B450D88E764B">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-20 07:07:52 UTC</createdTime>
+<comment><![CDATA[For chemical, it refers to LMMS.HMMS_PRS_CHM_CTG]]></comment>
+<commentInRDBMS><![CDATA[Reference to Line Item Table.]]></commentInRDBMS>
+<generatorID>F9C18669-68AD-7337-4F18-3FD94C531980</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="458724BF-1C90-B1C7-12C4-F3E23C5B1FEE" referredColumn="17E37926-2557-E6FE-246E-ABE97549A458"/>
+</associations>
+</Column>
+<Column name="PRDC_DETL_T" id="EA1D0D7C-EF3F-F078-0927-DDEB26E2C75D">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-20 07:07:52 UTC</createdTime>
+<comment><![CDATA[For product from different category, different json schema is applided.
+For instance, if category is 'Chemical', a sample json is 
+{
+physical_form:"solid",
+unit_of_measure_code:"KILO",
+packaging_size:"1",
+
+}
+
+]]></comment>
+<commentInRDBMS><![CDATA[Product details]]></commentInRDBMS>
+<generatorID>7667DF38-E38C-6C76-1B84-04EA64AF6CD5</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRDC_REF_N" id="CFFADEC8-2504-B71E-47C0-12F73093DBC6">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-04-23 03:24:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product Id based on the product category.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAT_C" id="14265445-C6FB-F809-20C1-465B278BFECF">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 17:54:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reference to common code table.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21775464-0D93-3AE8-9B47-448F45D630D3" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D29707C9-D14C-AD38-CAA0-DDFF5B19A12E" name="PRS_LINEITEM_PRDC_PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-20 07:07:52 UTC</createdTime>
+<generatorID>A02FB356-7589-5CED-C4D6-86DDC767EE3C</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42D727B0-ECB8-2306-6BAC-557E07FF2B42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F9FB164-926C-0925-8742-C19D17071679" name="PRS_PPL_PK_PN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 17:50:50 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42D727B0-ECB8-2306-6BAC-557E07FF2B42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9BEF042-2C34-D7FD-4D45-44B94EBC5975" name="PRS_PPL_I_PRN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 17:50:50 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFFADEC8-2504-B71E-47C0-12F73093DBC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F56924B4-53D7-ACDA-6192-F4AB10FB7F7A" name="PRS_PPL_I_LN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 17:50:50 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1791BCCC-362C-B09D-6102-B450D88E764B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1C1ECF7-ED38-AD17-C800-11D88EF9381B" name="PRS_PPL_I_CC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 17:50:50 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14265445-C6FB-F809-20C1-465B278BFECF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE1B98D9-F1D3-7786-8ED3-75C8532ED3C5" name="PRS_PPL_FK_LN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 17:55:23 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1791BCCC-362C-B09D-6102-B450D88E764B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="529C5633-B5D2-A524-53A8-C9F10D0E6044" name="PRS_PPL_FK_CCv1">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 17:56:27 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14265445-C6FB-F809-20C1-465B278BFECF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

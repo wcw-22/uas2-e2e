@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26DD5431-142D-B4CE-9055-8F09507D2CA1" name="PRS_PRDCONTRACT_PRODUCT">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:38:41 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUPP_PRDC_N" id="E20F3781-A3A2-D3EB-EEA5-302CC1A8346F">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:40:13 UTC</createdTime>
+<commentInRDBMS>Auto generated seq no</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>PRS_CTRCT_SUPPLIERPRDC_SEQ</autoIncrementSequenceName>
+</Column>
+<Column name="SUPP_N" id="610E17F7-1DF5-577B-3ABE-3BFEC550F757">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:40:13 UTC</createdTime>
+<commentInRDBMS>Contract_Supplier seq no (Reference to PRS_CTRCT_SUPPLIER)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<delegate>7F636CCB-F208-E365-C8DD-55539E84803C</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05C44A48-CECD-70CF-EA98-BECAA0436805" referredColumn="7F636CCB-F208-E365-C8DD-55539E84803C"/>
+</associations>
+</Column>
+<Column name="PRDC_CAT_C" id="F4F09452-0182-0D4F-4907-D808AF7C5C3D">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:56:38 UTC</createdTime>
+<commentInRDBMS>Product Category Code (Reference to PRSCTABLE)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<delegate>7CA56ED8-505B-0151-6CF4-C3812B1040F4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB08C7F3-76A0-B837-CBD8-D3C47F6523B7" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="PRDC_REF_N" id="4C938A74-3A1A-9136-F12D-F2C2C666EA5C">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:56:38 UTC</createdTime>
+<commentInRDBMS>Product Reference No</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPP_PART_N" id="EC8DC77E-9175-58FB-A16D-07FC283F7927">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-24 22:29:22 UTC</createdTime>
+<commentInRDBMS>Unique Supplier Part No</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MSRUNIT_C" id="266907AD-8BCF-7542-C256-D20C5FCC5F4D">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:56:38 UTC</createdTime>
+<commentInRDBMS>Unit Code (EA/Box) </commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<delegate>D24EF0EF-75E4-5159-FE90-6130710D92DE</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4C88CDF-1902-CCE6-6CF1-4971BF1D9649" referredColumn="D24EF0EF-75E4-5159-FE90-6130710D92DE"/>
+</associations>
+</Column>
+<Column name="PRDC_QTY_Q" id="9C35C5FD-480E-5912-47B9-F4305FCD9FBF">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:56:38 UTC</createdTime>
+<commentInRDBMS>Quantity per unit</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F5EE978-FCAB-D26A-26B8-2A0E68166CB6" name="PRS_PPP_PK_PN">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 20:40:13 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E20F3781-A3A2-D3EB-EEA5-302CC1A8346F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8065CA06-1348-D990-50EA-FAA8ABEC9EFF" name="PRS_PCSP_I_SPN">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-26 01:20:37 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC8DC77E-9175-58FB-A16D-07FC283F7927"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89F05E17-F467-235B-226E-8B86E1A0410B" name="PRS_PPP_FK_CT">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 21:13:52 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4F09452-0182-0D4F-4907-D808AF7C5C3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32847702-54DB-CB17-11DA-102E9A0CFC7E" name="PRS_PPP_FK_SP">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-24 01:40:43 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="610E17F7-1DF5-577B-3ABE-3BFEC550F757"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88083AB8-B4D4-4E09-51CC-096A2445B6ED" name="PRS_PPP_FK_MU">
+<createdBy>ccearun</createdBy>
+<createdTime>2020-06-29 11:27:05 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="266907AD-8BCF-7542-C256-D20C5FCC5F4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

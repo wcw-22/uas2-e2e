@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="PRJPRS" directorySegmentName="seg_0" id="3BCABA44-B925-48B7-C6EB-F1F1DBBFA4E0">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjName>PRJPRS</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:25 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="1C09FB3E-C1BA-5663-6D81-1EB94DC4CDD7">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 18:59:48 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>5F51D456-6076-D485-B100-F580EEB7AF75</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="4DFD6854-1C00-AF1C-4EAD-CD9627B4D9B2">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>119DB342-8FE6-7C43-8C6E-0997CE18F1C8</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions10" id="EEA75E72-A900-53D5-82F7-109DB7E72EEF">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>A22F6BD1-F99B-8267-463C-908ED7564E34</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions11" id="726FFB06-9E19-E7FF-9B1A-9AAD42A38FBE">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>8D61DE18-59FC-4AE7-235B-D9C211CD89C8</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions12" id="45789701-5175-5F1F-EA17-263C220C2DD5">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>C18E9E27-3B7C-2EEA-DDAE-EDC386FED2FE</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions13" id="47CDF43E-96EF-AD96-F39C-C4BA4CFCAEC3">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>9B8CA5A7-FFDC-276B-6DB1-5443A71FEFF5</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions14" id="F1FBBCD6-0F53-EB09-C788-7BAA1A81BDA1">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>96AEC574-F328-D356-280F-28ED3C102BDA</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions15" id="F8ED1B3A-DB71-A374-49CB-B17674BA42CC">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>72327F97-D89A-23F4-2FF9-A74F92E0BA8B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions16" id="C83E7190-5832-83C5-98F7-D65DCDFA3CBF">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>B80FD513-1C00-227A-A150-FDC3EA370B91</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions2" id="5B7FF3DD-E380-F75E-BEC1-D3D96F6170A8">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>B4D317DD-19B9-C5F4-8E08-25D3AA0C409F</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions2" id="46A8A3C9-618D-CB9C-5AD7-4F66967D2AF6">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>55170AE7-2F1B-62DA-8554-C6DB620D8E14</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions3" id="4D6BBCB5-B02C-812A-27BE-C7DA685FE6B1">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>68A28136-134A-8F07-CE17-B12ED1402A88</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions4" id="27ABE443-FB12-2BE2-B1D2-4EE98D40132C">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>686511BB-CBF1-AC71-7EFE-43D583DC85F9</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions5" id="47AB089A-7E8D-9798-C4CB-7BC578BC9ADF">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>FBF4B955-06DF-DD6A-B817-3BF2B0939B04</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions6" id="D8F13664-2161-B4D0-94E6-2CC955008E40">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>8B12D2EB-9069-DAD8-BDD7-DFD13EFD9B85</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions7" id="1DB1D049-D458-927A-B437-B35185F27082">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>B5CF19FF-3264-24C4-E32E-8E43CAF786CE</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions8" id="F097A24A-32B0-6007-9F32-B2F9C0A9FF91">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>3C9284A8-E9B9-A1D9-3FC1-7647A381101F</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions9" id="CBD80CEB-0BE7-735F-6114-98C186AF7762">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:08:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>ECFEC2C4-523E-6B52-0079-76F042667C2B</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

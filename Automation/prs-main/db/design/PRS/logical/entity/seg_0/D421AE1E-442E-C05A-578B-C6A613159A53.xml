@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D421AE1E-442E-C05A-578B-C6A613159A53" name="faculty">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<commentInRDBMS>Dummy table for faculties.</commentInRDBMS>
+<generatorID>0B0B8927-7543-020F-78C8-61538C504ACE</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="faculty_code" id="3C985AB7-8E79-18C8-BEC5-1D6A1BF8473B">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>115F7FA0-5CE3-827D-2256-55E2F1562F16</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F93A28D0-7CD8-3C8E-34D6-FEBDBF80D2EA" name="FACULTY PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>EC433911-CA12-87BF-F145-A7B053CD5493</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C985AB7-8E79-18C8-BEC5-1D6A1BF8473B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

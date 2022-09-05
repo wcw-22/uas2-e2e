@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF196EBF-9FF3-D246-B46F-B8619F1D8969" name="PRS_PRDCONTRACT_PRODUCTCONTROL">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 21:37:27 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRDC_CTRL_N" id="EB809A86-D8CF-DE1F-B889-54A5EC978089">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 21:47:14 UTC</createdTime>
+<commentInRDBMS>Auto generated seq no</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>PRS_CTRCT_SUPPLIERPRDCPRCT_SEQ</autoIncrementSequenceName>
+</Column>
+<Column name="SUPP_PRDC_N" id="A8B9F60F-312F-3882-5C7F-C07C2D296F90">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 21:42:45 UTC</createdTime>
+<comment>Contract Supplier Product id (Reference to PRS_CTRCT_SUPP_PRDC)</comment>
+<commentInRDBMS>Supplier product  no(Reference to PRS_CTRCT_SUPPLIERPRDC)</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<delegate>E20F3781-A3A2-D3EB-EEA5-302CC1A8346F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A33AD893-1CCF-3554-D2A7-BD95CD67827E" referredColumn="E20F3781-A3A2-D3EB-EEA5-302CC1A8346F"/>
+</associations>
+</Column>
+<Column name="QTY_MIN_Q" id="48C4F153-CD2C-A739-D882-CE8B2B614C4D">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 21:42:45 UTC</createdTime>
+<commentInRDBMS>Minimum qty of the tier</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QTY_MAX_Q" id="5A0A4AC1-3CC3-6C84-69D0-8B49983F694D">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 21:42:45 UTC</createdTime>
+<commentInRDBMS>Maximum qty of the tier</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNITPX_A" id="BAF3F405-B242-71EA-1AF7-554377C58F90">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 21:42:45 UTC</createdTime>
+<commentInRDBMS>Unit price</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7292B1F-DCD4-65B4-38E6-D8B14177B7BB" name="PRS_PCT_PK_CN">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 21:47:14 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB809A86-D8CF-DE1F-B889-54A5EC978089"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93D9E66B-C272-8DD5-C045-0C093E1D67C3" name="PRS_PCT_FK_SN">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-23 21:47:14 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8B9F60F-312F-3882-5C7F-C07C2D296F90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

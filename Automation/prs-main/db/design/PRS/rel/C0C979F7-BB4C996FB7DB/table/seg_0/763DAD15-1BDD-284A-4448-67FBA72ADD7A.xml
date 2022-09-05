@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="763DAD15-1BDD-284A-4448-67FBA72ADD7A" name="PRSCURRENCY">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-04-17 14:36:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table to store the currencies supported by Sesami for use in LMPRS.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CRCY_C" id="5B3CCC7A-BCED-E258-973A-8FC40A4CF574">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-04-17 14:38:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[3 letter ISO currency code as provided by Sesami.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRCY_T" id="CA2C404C-63EE-A857-CE90-B5CBB9B02746">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-04-17 14:38:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name of currency as provided by Sesami.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEFUNCT_F" id="8397342A-9F0B-2D51-B4BE-A2D86B9042EC">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-04-17 14:38:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag to denote if this currency has been defunct by Sesami.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD04C405-AE35-B453-A3D3-5164CF27DF72" name="PRS_PP_PK_CC">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-04-17 14:38:01 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B3CCC7A-BCED-E258-973A-8FC40A4CF574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

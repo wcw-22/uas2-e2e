@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DAE84B0-ECD3-A60B-C57E-BBD68242E74D" name="PRS_DELVADDR_CONFIG">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 07:37:36 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<ordsAlias>prs_fix_delvaddr</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DELVADDR_CONFIG_N" id="95744AF0-3B68-36BF-ED7E-A875FBF26ED2">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[This value is unique.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAC_C" id="5B83AB36-A43A-91E8-9231-DC9EE5F00D51">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Faculty Code. Referenced to Faculty Table]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B315145A-954E-2014-26C5-04CF02AD73E3" referredColumn="115F7FA0-5CE3-827D-2256-55E2F1562F16"/>
+</associations>
+</Column>
+<Column name="DEPT_C" id="24974C9A-71F6-BE14-51AC-D1AB5F2C0E7B">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Department Code. Referenced to Department Table]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E230618-7FBB-0862-DE44-510AEC9CF6A1" referredColumn="7BE584AC-FA0F-B823-4C64-3AB813EB325C"/>
+</associations>
+</Column>
+<Column name="DELV_ADDR_T" id="13174DE6-F1A6-C250-A78E-365F470C27C8">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Delivery Addres will be stored in this column for particular faculty code and department code.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPDUSER_I" id="084CA722-4FA8-5D77-5831-48F72BDD7275">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff Number or student matric ID of the staff or student who has updated the record most recently.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REC_UPD_DTM" id="B4695C47-7558-94E2-9242-58E198AC9C17">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date when record was last updated.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF52BEBC-0F0C-0B74-B6BB-787056441D81" name="DELVADDR_CONFIG_N">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95744AF0-3B68-36BF-ED7E-A875FBF26ED2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38045739-891E-C7AE-A371-BC663AB6D10D" name="PRS_PDC_FK_FCDC">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B83AB36-A43A-91E8-9231-DC9EE5F00D51"/>
+<colUsage columnID="24974C9A-71F6-BE14-51AC-D1AB5F2C0E7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5039345C-ACA1-E3C1-0A2F-083C74984ADA" name="PRS_PFD_I_FC">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B83AB36-A43A-91E8-9231-DC9EE5F00D51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17D0055D-774D-96A6-F262-2013A297AC8E" name="PRS_PFD_I_DC">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24974C9A-71F6-BE14-51AC-D1AB5F2C0E7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A827064A-6D62-13C3-4F68-11B5FC649A41" name="PRS_PDC_FK_FC">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B83AB36-A43A-91E8-9231-DC9EE5F00D51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F97E9990-C800-0575-8FAF-7B29E818D094" name="PRS_PDC_FK_DC">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-06-04 09:50:44 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24974C9A-71F6-BE14-51AC-D1AB5F2C0E7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

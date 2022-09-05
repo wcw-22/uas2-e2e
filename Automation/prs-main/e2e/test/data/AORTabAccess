@@ -1,0 +1,9 @@
+module.exports = { 
+    runs: [{nusnetId : 'BCHLEEC',
+            isLicensed : true},
+
+           {nusnetId:'BCHTMSY',
+           isLicensed : false} ,
+           
+           ]
+}

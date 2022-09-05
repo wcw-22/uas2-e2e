@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5CF19FF-3264-24C4-E32E-8E43CAF786CE" name="PRS_JOB_INSTANCE">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_JOB_INSTANCE</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table holds all information relevant to a JobInstance, and serves as the top of the overall hierarchy.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>60DE8F1F-11E1-2C9D-9AFC-7DB4C3D2BE76</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOB_INSTANCE_ID" id="2EC91DD2-7319-2E4E-FA52-6AD2ABA6C476">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_INSTANCE</sourceObjSchema>
+<sourceObjName>JOB_INSTANCE_ID</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique id that will identify the job instance.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>EF42344A-51E5-F342-2D8C-C9940BB10F88</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERSION" id="1C2EB3C9-BE13-3FC2-A27A-CCA4308BE0CA">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_INSTANCE</sourceObjSchema>
+<sourceObjName>VERSION</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[For keeping track whether a record has been updated.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>2BED89CD-4FCC-F73C-8260-612BB4F5E8F1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_NAME" id="EA677EBB-6EAB-FFA9-D0EF-8661466A3F03">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_INSTANCE</sourceObjSchema>
+<sourceObjName>JOB_NAME</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name of the job obtained from the Job object.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>0820DBB8-20B2-ACA1-B515-6C8DDD5B7708</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_KEY" id="A027522F-7000-D7AB-2224-97E0AC82A9AA">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_JOB_INSTANCE</sourceObjSchema>
+<sourceObjName>JOB_KEY</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[A serialization of the JobParameters that uniquely identifies separate instances of the same job from one another.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>F17CD929-4958-2F18-EF47-83D98E342913</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2500 BYTE</dataTypeSize>
+<ownDataTypeParameters>2500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2997C138-EF10-AF04-8E23-64F9AD8C065A" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_JOB_INSTANCE_PK">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>SYS_C00524034</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>597BD48C-BCAE-373C-E323-2A996DDF6B77</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EC91DD2-7319-2E4E-FA52-6AD2ABA6C476"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

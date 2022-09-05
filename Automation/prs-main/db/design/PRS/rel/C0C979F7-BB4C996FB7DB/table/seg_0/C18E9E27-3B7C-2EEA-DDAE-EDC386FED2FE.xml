@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C18E9E27-3B7C-2EEA-DDAE-EDC386FED2FE" name="PRS_PRODCONTRACT_ADDLCHARGE">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PRODCONTRACT_ADDLCHARGE</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[This table maintains the additional charges details of the period contract]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>517634E2-8C31-1F17-89A5-EC2A3817C845</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUPP_ADDLCHRG_N" id="B391CED9-7D0C-8893-E52A-B00E6FC96135">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PRODCONTRACT_ADDLCHARGE</sourceObjSchema>
+<sourceObjName>SUPP_ADDLCHRG_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto generated seq no]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>99B3CC06-9160-1D09-B61C-0BE062986402</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPP_N" id="C30B4CA9-5BC2-65D4-F296-5CB216DAE946">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PRODCONTRACT_ADDLCHARGE</sourceObjSchema>
+<sourceObjName>SUPP_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Supplier No (Reference to PRS_PRDCONTRACT_SUPPLIER)]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>E238CC1C-4048-97F2-4007-324F20BDB9D7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2805E806-F8A4-A40C-A396-2BC24A26B2B2" referredColumn="7F636CCB-F208-E365-C8DD-55539E84803C"/>
+</associations>
+</Column>
+<Column name="ADDL_CHRG_T" id="33FB8B48-4166-405A-ECC7-9E0A2126ED91">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PRODCONTRACT_ADDLCHARGE</sourceObjSchema>
+<sourceObjName>ADDL_CHRG_T</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Additional charge text]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>1A00E4BA-1D3C-233E-F4B7-41C2F09A094B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDL_CHRG_A" id="54280B06-CDBB-A545-027B-1127746FA8A2">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_PRODCONTRACT_ADDLCHARGE</sourceObjSchema>
+<sourceObjName>ADDL_CHRG_A</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Additional charge amount]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>6A1841A1-88EF-6EF1-7E7D-12A5DE61A291</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70111092-1DDD-1E09-5878-ECEAAACBBB20" name="PRS_PPA_PK_AC">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PPA_PK_AC</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>41884B65-F068-DC50-59EA-7817143FF7B8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B391CED9-7D0C-8893-E52A-B00E6FC96135"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="346BB01D-7F9A-94BC-584E-588EB2BB2033" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PPA_PK_AC">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PPA_PK_AC</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>5DE3650C-EBC3-DFB1-5176-F155EC6FFEF5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B391CED9-7D0C-8893-E52A-B00E6FC96135"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF1F1816-F2A0-F6E7-D19F-D16B7D982959" name="PRS_PPA_FK_SP">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C30B4CA9-5BC2-65D4-F296-5CB216DAE946"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

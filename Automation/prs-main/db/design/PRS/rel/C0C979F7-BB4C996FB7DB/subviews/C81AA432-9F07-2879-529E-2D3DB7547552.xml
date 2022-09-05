@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="User Delegation Table" id="C81AA432-9F07-2879-529E-2D3DB7547552">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-04-13 07:33:53 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="01F79389-4797-7B26-59F9-B357A8AC1AE3" otype="Table" vid="5723050C-57D9-620D-0065-04201FE25AEA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="262" y="184" width="368" height="281"/>
+</OView>
+</objectViews>
+</Diagram>

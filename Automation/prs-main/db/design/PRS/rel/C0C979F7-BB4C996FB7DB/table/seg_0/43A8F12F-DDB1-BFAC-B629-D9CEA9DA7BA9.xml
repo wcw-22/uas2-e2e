@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43A8F12F-DDB1-BFAC-B629-D9CEA9DA7BA9" name="PRS_USER_PREF">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-26 00:39:25 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PREF_N" id="DF89F677-C5FB-A5A2-3EB6-6E0F4440CC7B">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-26 00:41:34 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_I" id="973A9706-08F0-756D-4569-08B5569C5AE1">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-26 00:41:34 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_PREF_T" id="7BA4D0FE-7760-0C2C-B130-2EAF5A772F81">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-26 00:41:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[User preferences stored in JSON format. For instance {userid:023456,preferences:[daddr:[],baddr:[],phone:[]"]}]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45F43B0D-8A8D-67D0-597E-CCE7C0C7A718" name="PRS_PUP_PK_PN">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-27 06:51:15 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF89F677-C5FB-A5A2-3EB6-6E0F4440CC7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABE707E8-96AA-2719-21F0-14BC301CE6B6" name="PRS_PREF_USER__IDX">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-27 06:38:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="973A9706-08F0-756D-4569-08B5569C5AE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

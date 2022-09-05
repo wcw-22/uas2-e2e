@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Currency Table" id="2993F4F8-F398-6D28-208B-FD20AF8B1147">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-04-17 14:36:28 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="763DAD15-1BDD-284A-4448-67FBA72ADD7A" otype="Table" vid="FF5DFF54-12DF-C667-4B44-5272CFB966E4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="353" y="229" width="189" height="88"/>
+</OView>
+</objectViews>
+</Diagram>

@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BE766733-00A7-9E46-7B0B-5768E73997D6" name="PRSCTABLE">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<commentInRDBMS>This exclusive code table stores the list of common defined codes that are used in the Purchase Requisition System.</commentInRDBMS>
+<generatorID>AB06DAC9-5762-C5AB-10F5-7A13D967A034</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CODE C" id="6435107F-CE53-04E2-3F9A-8E74F85DA4C6">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<commentInRDBMS>Commonly defined code used in the system.</commentInRDBMS>
+<generatorID>7CA56ED8-505B-0151-6CF4-C3812B1040F4</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="CODE T" id="A9FD5FF5-80D9-3B19-9689-A801F7F3860C">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<commentInRDBMS>Description of code.</commentInRDBMS>
+<generatorID>7CFA810B-CE04-F9E0-DFFE-2C1D3D120B5B</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="DEFUNCT F" id="3FC3D4E8-8861-3D9A-30F5-78FEFB74A415">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<commentInRDBMS>Flag to denote if code is no longer in use (Y, N).</commentInRDBMS>
+<generatorID>BEC16132-8DF8-9381-75B4-1EC4DA28A539</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E264221E-79E2-CC9A-F694-DB8182C02ADB" name="PRSCTABLE PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>3E124C36-4744-18ED-984A-0DD4E83AB7A5</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6435107F-CE53-04E2-3F9A-8E74F85DA4C6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EDBFDFE5-EA8E-236D-D61A-C5972CE0B5D7" name="PRS_PIS_FK_ITC">
+<createdBy>ccev1610</createdBy>
+<createdTime>2019-04-09 10:05:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<containerWithKeyObject>124A5771-00A7-6054-8DA1-369FBED34616</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>58EA626B-1F85-BA6A-7D23-74E347CC7C9B</localFKIndex>
+<keyObject>3E124C36-4744-18ED-984A-0DD4E83AB7A5</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

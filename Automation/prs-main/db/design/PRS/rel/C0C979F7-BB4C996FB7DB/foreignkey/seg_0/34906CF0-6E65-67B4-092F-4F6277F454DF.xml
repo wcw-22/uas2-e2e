@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="34906CF0-6E65-67B4-092F-4F6277F454DF" containerWithKeyObject="01F79389-4797-7B26-59F9-B357A8AC1AE3" localFKIndex="9C24E29C-3627-A92B-7572-F43774F642A2" name="PRS_PN_FK_FC">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-04-13 07:43:55 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<referredTableLongName>FACULTY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0B0B8927-7543-020F-78C8-61538C504ACE</referredTableID>
+<keyObject>EC433911-CA12-87BF-F145-A7B053CD5493</keyObject>
+<referredKeyID>EC433911-CA12-87BF-F145-A7B053CD5493</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FAC_C</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

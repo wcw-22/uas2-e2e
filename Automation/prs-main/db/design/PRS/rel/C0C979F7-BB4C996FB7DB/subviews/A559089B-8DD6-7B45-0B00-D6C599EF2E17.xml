@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="PRS AOR Approver Table" id="A559089B-8DD6-7B45-0B00-D6C599EF2E17">
+<createdBy>ccev1655</createdBy>
+<createdTime>2019-05-27 04:46:35 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9A9ACDA5-D6E9-F076-DEDD-42AEB68199DD" otype="Table" vid="22CCAD6C-254B-3693-27A5-420A0EF653C0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="131" y="137" width="255" height="263"/>
+</OView>
+</objectViews>
+</Diagram>

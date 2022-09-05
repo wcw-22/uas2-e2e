@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E5655D2-F13F-DC3F-CD06-B024BA1AFA3B" name="PRS USER PREF DRAFT">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>ECE03EB4-1512-282A-446E-A44282A1CD49</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="USER PREF N" id="6B259E40-3C58-7DA4-14DD-93F81FB3A4CE">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>81195E63-E16E-B7FC-095F-FE4E6D52A14D</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+</Attribute>
+<Attribute name="USER I" id="5C81FCDD-275C-890B-749E-13AD063102F1">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<commentInRDBMS>Staff number or student matric id which uniquely identifies a user.</commentInRDBMS>
+<generatorID>3DF0A840-3B30-3DE2-A324-BAEC4059BAF2</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+<Attribute name="PREF KEY" id="737015F2-45F1-7870-8AD3-56C96E64385C">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<commentInRDBMS>The valid keys shall be defined in code table before it can be used.</commentInRDBMS>
+<generatorID>79F383AF-1B81-9CB0-70F2-7C6B7BD9861F</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="PREF VALUE" id="8F21D2D7-F0AE-7F68-8761-D073DE7792AC">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>9321D0E1-8C77-4550-BD52-D70FE2379019</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+</Attribute>
+<Attribute name="PREF ENTRY DTM" id="22690897-1B7A-0D56-BBC4-3CF50266F5E4">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<commentInRDBMS>The entry time shall be ordered by time. The old entry shall be replaced by new entry if it hits the maximum allowed preference.</commentInRDBMS>
+<generatorID>C3ACEB4B-1563-2AB5-A0A8-84184211CAFB</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3401AEF1-6F81-10E6-777E-8DEF37CAF14B" name="PRS USER PREF PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>91D69EF7-D82A-C719-D41F-DE88C82F595B</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6B259E40-3C58-7DA4-14DD-93F81FB3A4CE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

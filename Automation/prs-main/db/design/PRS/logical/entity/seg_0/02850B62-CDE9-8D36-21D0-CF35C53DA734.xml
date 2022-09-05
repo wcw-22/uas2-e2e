@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="02850B62-CDE9-8D36-21D0-CF35C53DA734" name="Suppliers">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>0D2DDB1F-3845-DAEF-E42F-2E13A064D4B9</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SUPP I" id="0094A53B-517F-0D96-42B1-2E1FFCA59B6B">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>36DA4F8E-2F6A-07C4-A5A7-A9D132905769</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="SUPP NM T" id="FB0D5C85-00DC-47CE-29D9-7BABF37DCFCC">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>696EA539-6CB8-D43B-6171-2FBA1D63736F</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="CTRY C" id="6D2B1DF0-CA95-078D-AC1E-968AF07BC67B">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>90E9F60C-1E0F-628A-4484-40D9A38E1750</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>C53D5D59-2D84-EFA4-0AB7-6C35BC71E645</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73A54B48-21F8-51AB-5360-3916D4C0CB3E" name="PRS PS PK SI">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>3C9C563A-D7CD-642D-7346-A1ACBFA5B78D</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0094A53B-517F-0D96-42B1-2E1FFCA59B6B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

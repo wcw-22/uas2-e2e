@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="department_pr" directorySegmentName="seg_0" id="62510D9D-8D4E-E5BD-E5A8-6E0BC8CC7723">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:51:44 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<sourcePk>50A5F7EA-4E66-C172-A2EC-D90772A03FCA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FD4DEA4E-CE60-709B-950C-ECAE7C0DC512</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>14F85C68-8F26-81F8-A55D-076ECE3EBA06</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

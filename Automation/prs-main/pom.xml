@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>sg.edu.nus.prs</groupId>
+    <artifactId>prs-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Purchase Requisition System</name>
+    <description>Purchase Requisition System</description>
+
+    <repositories>
+        <repository>
+            <id>data-local</id>
+            <name>data</name>
+            <url>file://${project.basedir}/repo</url>
+        </repository>
+    </repositories>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <modules>
+<!--        <module>prs-web-frontend</module>-->
+        <module>prs-web-backend</module>
+        <module>prs-web-integration</module>
+        <module>prs-web-rules</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <spring-statemachine.version>2.2.0.RELEASE</spring-statemachine.version>
+
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+        <maven.clean.version>3.0.0</maven.clean.version>
+        <maven.surefire.version>2.18.1</maven.surefire.version>
+        <maven.failsafe.version>2.18.1</maven.failsafe.version>
+        <maven.wildfly.version>1.2.1.Final</maven.wildfly.version>
+
+        <jstl.version>1.2</jstl.version>
+
+        <apache.fileupload.version>1.3.3</apache.fileupload.version>
+        <apache.commons.collection.version>4.1</apache.commons.collection.version>
+        <apache.commons.lang.version>3.9</apache.commons.lang.version>
+        <apache.tika.version>1.11</apache.tika.version>
+        <apache.poi.version>4.1.1</apache.poi.version>
+        <apache.velocity.version>2.1</apache.velocity.version>
+        <apache.commons.validator.version>1.7</apache.commons.validator.version>
+
+        <nus.adfs.version>2.1.0</nus.adfs.version>
+        <jsonwebtoken.version>0.6.0</jsonwebtoken.version>
+        <org.json.version>20151123</org.json.version>
+        
+        <org.openl.version>5.22.6</org.openl.version>
+        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+        <log4j2.version>2.16.0</log4j2.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring State Machine -->
+            <dependency>
+                <groupId>org.springframework.statemachine</groupId>
+                <artifactId>spring-statemachine-bom</artifactId>
+                <version>${spring-statemachine.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- JSP -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+                <version>${jstl.version}</version>
+            </dependency>
+
+            <!-- Apache Commons -->
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${apache.fileupload.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${apache.commons.collection.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache.commons.lang.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${apache.commons.validator.version}</version>
+            </dependency>
+
+
+            <!-- Apache Tika -->
+            <dependency>
+                <groupId>org.apache.tika</groupId>
+                <artifactId>tika-core</artifactId>
+                <version>${apache.tika.version}</version>
+            </dependency>
+
+            <!-- Apache Velocity -->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${apache.velocity.version}</version>
+            </dependency>
+
+            <!-- POI -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${apache.poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${apache.poi.version}</version>
+            </dependency>
+
+            <!-- NUS Dependencies -->
+            <dependency>
+                <groupId>nus</groupId>
+                <artifactId>nus-adfs</artifactId>
+                <version>${nus.adfs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jsonwebtoken.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>${org.json.version}</version>
+            </dependency>
+
+            <!-- Oracle -->
+            <dependency>
+                <groupId>oracle</groupId>
+                <artifactId>oracle.ojdbc</artifactId>
+                <version>7.0</version>
+                <scope>provided</scope>
+            </dependency>
+            
+            <dependency>
+				<groupId>org.modelmapper</groupId>
+				<artifactId>modelmapper</artifactId>
+				<version>2.3.2</version>
+			</dependency>
+			
+			<!-- openl tablets -->
+			<dependency>
+	            <groupId>org.openl.rules</groupId>
+	            <artifactId>org.openl.rules</artifactId>
+	            <version>${org.openl.version}</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.openl.rules</groupId>
+	            <artifactId>org.openl.rules.project</artifactId>
+	            <version>${org.openl.version}</version>
+	        </dependency>
+
+            <!-- Java Mail -->
+            <dependency>
+                <groupId>javax.mail</groupId>
+                <artifactId>javax.mail-api</artifactId>
+                <version>1.6.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.mail</groupId>
+                <artifactId>javax.mail</artifactId>
+                <version>1.6.2</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${maven.clean.version}</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${project.basedir}</directory>
+                            <includes>
+                                <include>*.war</include>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

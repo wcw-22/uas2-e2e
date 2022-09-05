@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFB3C78D-B578-A955-C760-98A87EDE3AE4" name="PRS_INTGR_STATUS">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 08:08:35 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<ordsAlias>prs_intgr_sts</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INTGR_TRAN_N" id="C379329B-4331-5A3D-DC8A-312B94336D9D">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 08:15:36 UTC</createdTime>
+<comment><![CDATA[Geneate  sequence number]]></comment>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHNL_C" id="AFA73034-84D8-F243-CE07-E00C5A278D67">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 09:55:28 UTC</createdTime>
+<comment><![CDATA[Channel to be Inbound/Outbound]]></comment>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="283889C6-AE07-A6AE-0BEA-5495819F73C2" referredColumn="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</associations>
+</Column>
+<Column name="WS_URL_T" id="8F61C357-C285-8C1D-923C-580ED0A85395">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 08:10:28 UTC</createdTime>
+<comment><![CDATA[End point url is stored]]></comment>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOST_SERVER_T" id="9073A214-1C9C-3649-D7C8-D832768F4DB9">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 08:18:56 UTC</createdTime>
+<comment><![CDATA[Integration status code]]></comment>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HTTP_STS_C" id="901F9059-56F4-0342-A639-0C4927E5B949">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 08:20:04 UTC</createdTime>
+<comment><![CDATA[Program function name]]></comment>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTGR_DUR_N" id="84805AD1-CC33-BC1D-962C-A3F49BC09D2E">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 09:58:37 UTC</createdTime>
+<comment><![CDATA[Duration of the process. ]]></comment>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REQ_PAYLOAD_T" id="A32F3660-D12E-81D9-43E2-C401BF74E3E8">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 10:00:12 UTC</createdTime>
+<comment><![CDATA[Remarks]]></comment>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESP_PAYLOAD_T" id="21A85F37-37C2-3565-C264-9C94CE28FDDA">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 08:23:03 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTGR_TRAN_DTM" id="C34903EB-DD9C-46FA-954F-F428CDB744CB">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:24:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[The hostname of the server instance from which a job runs.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B501E52C-446E-DDB2-4BC9-CA7D14DCE572" name="PRS_PIS_PK_TN">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-14 08:15:36 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C379329B-4331-5A3D-DC8A-312B94336D9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4E113F9-2DB4-460A-2894-06831D9FE51F" name="PRS_PIS_FK_NC">
+<createdBy>cceamal</createdBy>
+<createdTime>2019-03-15 04:11:09 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFA73034-84D8-F243-CE07-E00C5A278D67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

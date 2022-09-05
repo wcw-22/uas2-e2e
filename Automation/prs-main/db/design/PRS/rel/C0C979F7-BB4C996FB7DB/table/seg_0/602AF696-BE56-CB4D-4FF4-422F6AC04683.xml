@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="602AF696-BE56-CB4D-4FF4-422F6AC04683" name="MSRUNIT">
+<createdBy>ccearun</createdBy>
+<createdTime>2020-06-29 11:24:24 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MSRUNIT_C" id="D24EF0EF-75E4-5159-FE90-6130710D92DE">
+<createdBy>ccearun</createdBy>
+<createdTime>2020-06-29 11:24:58 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MSRUNIT_T" id="3F967FDB-8148-9D19-B0F8-C5AD74820F88">
+<createdBy>ccearun</createdBy>
+<createdTime>2020-06-29 11:25:32 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MSRUNIT_T1" id="27F6A733-0A37-9D10-6390-96205BBF7A17">
+<createdBy>ccearun</createdBy>
+<createdTime>2020-06-29 11:25:48 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="252D81B9-D33A-239D-EEEF-FC8D005D2EC4" name="NC_UOM_PK_UC">
+<createdBy>ccearun</createdBy>
+<createdTime>2020-06-29 11:25:56 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D24EF0EF-75E4-5159-FE90-6130710D92DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

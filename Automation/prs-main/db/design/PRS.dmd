@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="PRS" id="19139EBF-F093-B0B0-9C04-04C2FE4FE5AB" version="3.5">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-02-25 06:20:26 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>19139EBF-F093-B0B0-9C04-04C2FE4FE5AB</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="0E21FDFA-FD2D-DFCF-EBD3-B6FA1AC628C3">
+<designStoragePath>E:\</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F0E24BE1-2F66-C928-8176-DC5A187D0562">
+<designStoragePath>E:\NUS\Sprints\824\design</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="DFBD0ED7-B4D3-589A-BA40-1EE4CD7FE4E7">
+<designStoragePath>E:\NUS\Sprints\824\design</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="4AE24C9C-9D5F-7D91-336D-85BA4CBD1460">
+<designStoragePath>E:\NUS\Sprints\824\design</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

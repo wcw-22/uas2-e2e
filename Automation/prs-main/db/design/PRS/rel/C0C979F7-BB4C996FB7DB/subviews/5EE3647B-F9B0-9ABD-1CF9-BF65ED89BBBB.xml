@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Integration Status Table" id="5EE3647B-F9B0-9ABD-1CF9-BF65ED89BBBB">
+<createdBy>cceamal</createdBy>
+<modifiedBy>niluc</modifiedBy>
+<createdTime>2019-03-14 08:08:07 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BFB3C78D-B578-A955-C760-98A87EDE3AE4" otype="Table" vid="F1005164-C5A8-0F93-A67E-CECED0924070">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="24" y="28" width="241" height="158"/>
+</OView>
+</objectViews>
+</Diagram>

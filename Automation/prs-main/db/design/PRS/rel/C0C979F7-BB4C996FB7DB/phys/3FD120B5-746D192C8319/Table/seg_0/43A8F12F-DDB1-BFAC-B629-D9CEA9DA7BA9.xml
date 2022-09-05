@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRS_USER_PREF" directorySegmentName="seg_0" id="43A8F12F-DDB1-BFAC-B629-D9CEA9DA7BA9">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-26 00:39:25 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="USER_PREF_T" id="7BA4D0FE-7760-0C2C-B130-2EAF5A772F81">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-26 00:41:34 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_I" id="973A9706-08F0-756D-4569-08B5569C5AE1">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-26 00:41:34 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PREF_N" id="DF89F677-C5FB-A5A2-3EB6-6E0F4440CC7B">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-26 00:41:34 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PREF_USER__IDX" id="ABE707E8-96AA-2719-21F0-14BC301CE6B6">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-27 06:38:42 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRS_PUP_PK_PN" id="45F43B0D-8A8D-67D0-597E-CCE7C0C7A718">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-27 06:51:15 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

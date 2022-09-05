@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C7FFFF5E-733D-50D7-578D-E6C758BC0CA8" containerWithKeyObject="C80DAD34-0529-E1CC-17FE-B8FD08BD7114" localFKIndex="C452DE07-69D4-BC0D-DE35-84397332C24B" name="PRS_PQA_FK_QN">
+<createdBy>Muhd</createdBy>
+<createdTime>2020-08-06 08:22:14 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<referredTableLongName>PRS_QUOTATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C58F8B7-448E-46A8-BE1A-1D4C53BA6781</referredTableID>
+<keyObject>2E802B8D-E23A-C19F-ACE4-906E5A171129</keyObject>
+<referredKeyID>2E802B8D-E23A-C19F-ACE4-906E5A171129</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>QT_N</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

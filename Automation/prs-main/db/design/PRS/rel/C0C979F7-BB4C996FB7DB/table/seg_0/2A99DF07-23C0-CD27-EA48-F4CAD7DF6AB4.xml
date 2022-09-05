@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A99DF07-23C0-CD27-EA48-F4CAD7DF6AB4" name="PRS_PERIODCONTRACT_CONTACT">
+<createdBy>Muhd</createdBy>
+<createdTime>2021-07-01 01:43:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[This table stores the point of contact emails for the period contracts.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<ordsAlias>table_63</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRD_CONTACT_N" id="6AF9EFFE-8032-D5EC-3B66-5F454E51672A">
+<createdBy>Muhd</createdBy>
+<createdTime>2021-07-01 01:47:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sequence number. Populated by Oracle sequence.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRDCON_SEQ_N" id="F39A2CF4-D77D-78A5-F8C4-9CABC0756B68">
+<createdBy>Muhd</createdBy>
+<createdTime>2021-07-01 01:47:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reference to the period contract this contact record belongs to.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BEC5CDC3-3C09-D631-29F2-E89CE8EA08EE" referredColumn="C4BD54F7-5A79-4FBC-925F-13F250A31893"/>
+</associations>
+</Column>
+<Column name="CONTACT_T" id="6DD57B7B-A01F-F6C9-57EF-B1B31B9E3AFF">
+<createdBy>Muhd</createdBy>
+<createdTime>2021-07-01 01:56:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Email address for point of contact.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_N" id="827E6819-5EE4-F07C-8D6F-FBD664306911">
+<createdBy>Muhd</createdBy>
+<createdTime>2021-07-01 01:56:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Order of display for point of contact.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FCD9AE8B-85F6-5E0D-1BF9-211AD82C62FA" name="PRS_PCC_PK_PC">
+<createdBy>Muhd</createdBy>
+<createdTime>2021-07-01 01:58:55 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AF9EFFE-8032-D5EC-3B66-5F454E51672A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F3A7803-BA5E-D603-2C00-261B40833A4B" name="PRS_PCC_FK_PS">
+<createdBy>Muhd</createdBy>
+<createdTime>2021-07-01 01:59:33 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F39A2CF4-D77D-78A5-F8C4-9CABC0756B68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

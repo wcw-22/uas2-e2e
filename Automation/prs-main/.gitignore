@@ -1,0 +1,14 @@
+.settings
+.classpath
+.factorypath
+.project
+.vscode
+node_modules
+target
+*.war
+*.class
+/.idea/
+*.iml
+prs-web-backend/src/main/resources/application-FRONTEND_DEV.properties
+prs-web-backend/src/main/java/sg/edu/nus/prs/.DS_Store
+prs-web-backend/src/main/webapp/.DS_Store

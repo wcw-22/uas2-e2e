@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRS_PURCHASE_LINEITEM" directorySegmentName="seg_0" id="B4D317DD-19B9-C5F4-8E08-25D3AA0C409F">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1AEEED91-E95E-D978-E327-0996CEF9805E</segment>
+<tableSpace>EA4D16F9-BD95-11DE-9332-9B0E1F04D354</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="UPRICE_A" id="14B16EB9-A325-23FA-EE5F-339D5DC8263B">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LINEITEM_N" id="17E37926-2557-E6FE-246E-ABE97549A458">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QTY_PERUNIT_N" id="3431F353-FA03-884D-49A3-143CE2D304AD">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ITEM_N" id="5FFE943D-F9DE-29BD-46B2-4955B43E39FD">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PR_N" id="872C9A83-D10A-8B7E-588D-1C293233E16E">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBTOT_A" id="B0524A86-A095-8F5C-04E2-26CD6EF80C70">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MSR_UNIT_C" id="C5E3C807-18ED-059E-23F3-EAF051521BC2">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QTY_Q" id="F87FEA95-9CF3-EE27-BDDF-8E5A381EBF3E">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PPL_PK_LN" id="048780D9-5EC6-4373-25F8-55E9E2B95A04">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<schemaObject>E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB</schemaObject>
+<segment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PPL_I_PLN" id="479A95C4-49FC-B457-E997-7AE4EB5F17CE">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<schemaObject>E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB</schemaObject>
+<segment>A5FEADE9-2585-C374-967B-7EBC85F1C666</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_PPL_I_PN" id="E2791DBC-E0C8-83F4-E953-D50B6B4E4AFD">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<schemaObject>E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB</schemaObject>
+<segment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_PURCHASE_LINEITEM_PRS_PURCHASE_REQ_FK" id="B798698B-B963-CBF0-750A-A44808C7C52B">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRS_PPL_PK_LN" id="3BB03F80-E841-D910-90EE-C2DB85745081">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<segment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</segment>
+<tableSpace>57801D91-F2B9-ADCF-AB33-C39E42C44429</tableSpace>
+<existingIndex>048780D9-5EC6-4373-25F8-55E9E2B95A04</existingIndex>
+<indexSegment>AA6E1FE9-476E-1767-AFCB-2F99493BA555</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

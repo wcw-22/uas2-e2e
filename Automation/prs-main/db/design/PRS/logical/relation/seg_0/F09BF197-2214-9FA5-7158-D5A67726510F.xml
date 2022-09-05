@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PRS_UA_FK_FC" directorySegmentName="seg_0" id="F09BF197-2214-9FA5-7158-D5A67726510F">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:17 UTC</createdTime>
+<generatorID>8E28E7EB-39B8-C0EC-302A-FEDB9A238910</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<sourcePk>F93A28D0-7CD8-3C8E-34D6-FEBDBF80D2EA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D421AE1E-442E-C05A-578B-C6A613159A53</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9479EAA0-DB85-D7AD-C581-96D7F2A752D4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

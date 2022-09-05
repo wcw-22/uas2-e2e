@@ -1,0 +1,6 @@
+update PRS_PURCHASE_LINEITEMPRDC
+set PRDC_REF_N = '100063690'
+where PRDC_N = '3633';
+
+commit;
+

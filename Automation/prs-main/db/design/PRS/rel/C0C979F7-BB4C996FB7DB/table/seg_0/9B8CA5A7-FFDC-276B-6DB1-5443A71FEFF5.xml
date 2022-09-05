@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B8CA5A7-FFDC-276B-6DB1-5443A71FEFF5" name="PRS_QUOTATION_DOCUMENT">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_QUOTATION_DOCUMENT</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table stores relationship between the qutations and the documents.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>77B56678-9039-C051-4BB1-39CD0E74C37D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="QT_N" id="7AEAFD72-C142-D6C4-5491-496A8C7E81F7">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_QUOTATION_DOCUMENT</sourceObjSchema>
+<sourceObjName>QT_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Foreign key referring to item in quotation table.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>4AC89214-F7AD-26BF-EE9E-20C755C0352A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18FBC232-77F3-26AF-8BAA-B0EB82158D40" referredColumn="72B42950-C730-F984-6521-FB4B2370BA12"/>
+</associations>
+</Column>
+<Column name="DOCU_N" id="B263F80B-3D4F-88E8-5DAB-55583A15997C">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_QUOTATION_DOCUMENT</sourceObjSchema>
+<sourceObjName>DOCU_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Foreign key referring to item in document table.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>F1D8F692-C4E4-91FF-FF8E-6B622F19DEA3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CBE11246-B324-0FCF-B209-F03E69F5CB2A" referredColumn="F2894AE9-9E88-F234-755F-E0E90811EE8A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C9D1951-BC93-6D86-FDF6-C973401DDB58" name="PRS_PQD_PK_QTDN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PQD_PK_QTDN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>4247B424-2EDE-3133-9E98-B0ADC85F1669</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AEAFD72-C142-D6C4-5491-496A8C7E81F7"/>
+<colUsage columnID="B263F80B-3D4F-88E8-5DAB-55583A15997C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FD6F21C-F185-8937-EC39-0C2E79D0626C" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PQD_PK_QTDN">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PQD_PK_QTDN</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>FAC2E889-A6C8-0F8C-BB12-2D5181E80025</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AEAFD72-C142-D6C4-5491-496A8C7E81F7"/>
+<colUsage columnID="B263F80B-3D4F-88E8-5DAB-55583A15997C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="493812C0-F97A-6106-934D-ACCE30ADCE6F" name="PRS_PQD_FK_DN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B263F80B-3D4F-88E8-5DAB-55583A15997C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF44301E-C0A4-809D-CA83-C9FE9805E997" name="PRS_PQD_FK_QT">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:43:21 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AEAFD72-C142-D6C4-5491-496A8C7E81F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

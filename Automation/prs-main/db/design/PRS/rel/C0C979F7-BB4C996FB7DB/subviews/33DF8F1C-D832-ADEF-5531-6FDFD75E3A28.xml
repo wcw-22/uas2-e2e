@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Purchase Order History Table" id="33DF8F1C-D832-ADEF-5531-6FDFD75E3A28">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-05-28 05:57:35 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C058726B-9607-4608-0744-36ED91664068" otype="Table" vid="961AE870-CFD0-F11F-F743-C7B82AA49715">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="320" y="256" width="270" height="190"/>
+</OView>
+</objectViews>
+</Diagram>

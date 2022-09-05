@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="PRS_PR_SYSTEM_CHECK" directorySegmentName="seg_0" id="F9F17284-926F-2032-207E-474C739A7BF5">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 03:13:03 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRS_SYSCHK_PR__IDX" id="F9493760-178C-620C-7AA0-DE74ADA595D4">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-27 06:09:02 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SYS_CHK_OUTCOME_C" id="4B22B40F-5DEA-28D8-EC4B-32110B86FEF0">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-27 05:34:48 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SYS_CHECK_RSLT_T" id="67612E9A-CEE5-4295-F5AA-D5AB7AD1AFBC">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 03:24:21 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SYSCHK_ID_N" id="96DC31AE-00A4-1A60-E2F7-755029EBA8AB">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 03:24:21 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SYS_CHK_TY_C" id="BA0AE660-07AB-1121-B4D5-DEB42D51F770">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 06:04:21 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PR_ID_N" id="CE63FEEB-2C46-4379-307D-1A0BB5EA2C73">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-27 05:16:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_SYSCHK_PR_FK" id="D8301054-AB23-CF0C-1DAF-FAEC5B0E0214">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-27 05:16:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRS_SYSCHK_PRSCTABLE_FK" id="F3D95AB4-351C-3961-16BD-51C2C5E49738">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 06:04:21 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRS_SYSTEM_CHECK_PK" id="01A353CC-79BA-1B02-DCD9-8CBCB71A5DF5">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-25 03:24:21 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

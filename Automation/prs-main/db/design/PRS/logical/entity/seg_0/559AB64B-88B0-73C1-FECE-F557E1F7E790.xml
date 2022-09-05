@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="559AB64B-88B0-73C1-FECE-F557E1F7E790" name="DeliveryInformation">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:04:13 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="payment_term_code" id="CB8C7FEF-5AAB-9480-3048-A616AC3F2282">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:04:25 UTC</createdTime>
+<commentInRDBMS>PRSCTABLE? </commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+</Attribute>
+<Attribute name="delivery_address" id="FDBD34C1-2AB3-536D-64F9-B0B275B47ED8">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:04:35 UTC</createdTime>
+<commentInRDBMS>Maximum X number of  recently entered unique options will be kept in the preference table; the chosen or the newly entered will be stored in the delivery info.</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+</Attribute>
+<Attribute name="billing_address" id="1CD20BB8-8076-9659-BCED-0E996A77894B">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:04:43 UTC</createdTime>
+<commentInRDBMS>Maximum X number of  recently entered unique options will be kept in the preference table; the chosen or the newly entered will be stored in the delivery info.</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+</Attribute>
+<Attribute name="requestor_email" id="03944862-B68A-CEFA-5C8A-DBFF673C34E9">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:04:58 UTC</createdTime>
+<commentInRDBMS>The chosen email from multiple available emails for this requestor.</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+</Attribute>
+<Attribute name="requestor_phone" id="23CC4A8F-2066-0C66-E421-411B53BB4C30">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<commentInRDBMS>Maximum X number of  recently entered unique options will be kept in the preference table; the chosen or the newly entered will be stored in the delivery info.</commentInRDBMS>
+<generatorID>B8C654EB-0F0F-768D-0930-F64CBB282C5A</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="instruction_to_supplier" id="2866F2F2-7534-2C98-F91C-CFF1A982B362">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:05:14 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Attribute>
+<Attribute name="request_number" id="C0494EBC-834A-4EC6-D3F3-792228829C0A">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 05:52:58 UTC</createdTime>
+<comment>There are 3 different kinds of request, &quot;PR&quot;,&quot;AOR&quot; and &quot;SQRR&quot;. The request number will be prefixed with &quot;pr-&quot;, &quot;aor-&quot; and &quot;sqrr-&quot; respectively.&lt;br/&gt;</comment>
+<generatorID>02182B5B-D653-D181-67D2-71F6E7524B99</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>4C03E305-CCFA-5F67-0EFA-0ED1D3990336</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="87621E99-FFD1-14BD-7FDB-C8A49D353880" name="PRS_DELV_INFO_PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 02:35:55 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

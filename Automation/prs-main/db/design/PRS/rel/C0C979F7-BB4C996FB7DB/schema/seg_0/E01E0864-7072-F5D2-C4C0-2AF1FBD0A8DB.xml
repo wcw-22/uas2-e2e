@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="PRSDBM" directorySegmentName="seg_0" id="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 07:25:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>F365360B-258F-A206-1D16-371FE3C94CE2</importedID>
+</SchemaObject>

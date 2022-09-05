@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB06DAC9-5762-C5AB-10F5-7A13D967A034" name="PRSCTABLE">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-02-25 06:21:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[This exclusive code table stores the list of common defined codes that are used in the Purchase Requisition System.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODE_C" id="7CA56ED8-505B-0151-6CF4-C3812B1040F4">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-02-25 06:27:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Commonly defined code used in the system.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE_T" id="7CFA810B-CE04-F9E0-DFFE-2C1D3D120B5B">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-02-25 06:28:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Description of code.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEFUNCT_F" id="BEC16132-8DF8-9381-75B4-1EC4DA28A539">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-02-25 06:28:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag to denote if code is no longer in use (Y, N).]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E124C36-4744-18ED-984A-0DD4E83AB7A5" name="PRS_PCT_PK_CC">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-02-25 06:27:24 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CA56ED8-505B-0151-6CF4-C3812B1040F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="PRS_CT_CK_DF" directorySegmentName="seg_1" id="C41F64B0-8BBA-E68E-A87C-6E2A731B573F">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-02-25 06:57:19 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<rule><![CDATA[DEFUNCT_F IN ('Y','N')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B80FD513-1C00-227A-A150-FDC3EA370B91" name="PRS_STEP_EXECUTION_CONTEXT">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_STEP_EXECUTION_CONTEXT</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[This table holds all information relevant to an Step's ExecutionContext.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>325552D1-E204-91AF-3827-E093196F1022</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STEP_EXECUTION_ID" id="AF17AC13-C488-3592-FCB4-B9534EFF125C">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_STEP_EXECUTION_CONTEXT</sourceObjSchema>
+<sourceObjName>STEP_EXECUTION_ID</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Foreign key representing the StepExecution to which the context belongs.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>2F8002A8-185D-F7E1-AF02-A7B5D0D4F0C5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62CC93E6-1249-9C9C-D0DE-42715284A82F" referredColumn="893C0C98-2B78-A7B8-94EB-9C9911E9D28F"/>
+</associations>
+</Column>
+<Column name="SHORT_CONTEXT" id="A286A230-692B-C60A-2813-657C81F9A2FC">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_STEP_EXECUTION_CONTEXT</sourceObjSchema>
+<sourceObjName>SHORT_CONTEXT</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[A string version of the SERIALIZED_CONTEXT.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>8BC326C7-603A-C677-7334-8FFAD0E0D87D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2500 BYTE</dataTypeSize>
+<ownDataTypeParameters>2500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SERIALIZED_CONTEXT" id="5E40483C-ECF0-7C08-E139-B2DD9EAD0ECB">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_STEP_EXECUTION_CONTEXT</sourceObjSchema>
+<sourceObjName>SERIALIZED_CONTEXT</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[The entire context, serialized.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>3A77DD3C-5AE4-F350-057D-93BFB82F9F76</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C73C77F3-F863-2BD4-C798-6F091C1EE4D7" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_STEP_EXECUTION_CONTEXT_PK">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>SYS_C00524054</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>CFEAE318-37FA-C9B1-FD81-CAEFA9658F65</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF17AC13-C488-3592-FCB4-B9534EFF125C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1144B28A-4BD1-8485-F628-0AE9F268CDFF" name="PRS_PSEC_FK_SEI">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF17AC13-C488-3592-FCB4-B9534EFF125C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

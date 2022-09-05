@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1ADDB09-1557-BEE8-E2D0-72FF3ABE3331" name="PRS_COLLECT_CONTRACTUTIL">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 02:55:16 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<ordsAlias>table_61</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COLLECT_CON_N" id="5C3189D6-EB76-7CAE-09EF-56291B61832A">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 02:55:16 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PRS_POLINEITEM_CONTRACTv1_POLINEITEM_CONTRACT_N</notNullConstraintName>
+</Column>
+<Column name="COLLECT_N" id="5E048081-C57A-2910-B426-9C6201519563">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 02:55:16 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F81C7505-8EB3-1454-2F25-7CB71907BEAD" referredColumn="313976C0-B460-8DEC-3F03-742A4EF78351"/>
+</associations>
+</Column>
+<Column name="CON_UTIL_N" id="B68E8BA6-5B0C-69AB-59D4-FABA5A8245DA">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 02:55:16 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PRS_POLINEITEM_CONTRACTv1_CON_UTILIZATION_N</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="59E7DA69-21A8-1216-6478-00EF463B31B7" referredColumn="D765AA1B-9058-D4B2-BCB3-8F1408D20F74"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45F86C12-4057-655B-78FE-D57BB50111C1" name="PRS_CCU_PK_CCN">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 02:55:16 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C3189D6-EB76-7CAE-09EF-56291B61832A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCD3DFC2-7C43-D654-CF0E-3670A81C2831" name="PRS_CCU_UK_CUCN">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2021-04-16 17:57:00 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E048081-C57A-2910-B426-9C6201519563"/>
+<colUsage columnID="B68E8BA6-5B0C-69AB-59D4-FABA5A8245DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01B32C79-6477-8789-B715-9DEEAA77243D" name="PRS_CCU_FK_CN">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 03:02:40 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E048081-C57A-2910-B426-9C6201519563"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B390984-16E2-844D-ACC7-089D81FEEDEC" name="PRS_CCU_FK_CUN">
+<createdBy>lehoaithuong</createdBy>
+<createdTime>2020-08-12 03:02:40 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B68E8BA6-5B0C-69AB-59D4-FABA5A8245DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

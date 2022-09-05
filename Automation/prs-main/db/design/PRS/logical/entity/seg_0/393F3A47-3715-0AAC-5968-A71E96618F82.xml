@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="393F3A47-3715-0AAC-5968-A71E96618F82" name="ProcessingOutcomes">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>3EAE7C81-C0D6-ADBD-73E7-D15645007A2C</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="officer_number" id="608EB5DF-2D82-8409-00C5-FCC1FDF95378">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<comment>Staff number to identify an officer uniquely.</comment>
+<commentInRDBMS>Staff number of the processing officer.</commentInRDBMS>
+<generatorID>6141596B-2F4A-987F-2DAD-49DD194FED11</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="processing_outcome" id="2FB91FCC-2E27-BF4F-760C-796489B7B5BA">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<comment>To indicate if it is approved or rejected. The outcome value shall be defined in acode table.</comment>
+<commentInRDBMS>The processing outcome come from a definite list. The outcome shall be defined in the code table before it can be used.&lt;br/&gt;Proposed values are: &lt;br/&gt;&lt;br/&gt;APPROVED&lt;br/&gt;REJECTED&lt;br/&gt;</commentInRDBMS>
+<generatorID>A7927B9D-6373-DD85-2F03-6D87E5696210</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="processing_comment" id="70385C3E-EEC2-05C0-3800-CB7C26DB4EB4">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<comment>To provide justification for the processing outcome.</comment>
+<commentInRDBMS>Place to hold rejection or cancellation reason.</commentInRDBMS>
+<generatorID>F208CFBE-9669-1214-AD57-27F0E4EEE26E</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="processing_action_type" id="0D25E75A-A858-40BC-BFEF-1DE76E13920D">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:34:46 UTC</createdTime>
+<comment>To indicate the type of processing such as regulatory officer processing, or QAA processing etc.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+</Attribute>
+<Attribute name="request_number" id="60C21417-1E52-1E84-CC7E-BA8D9E70B090">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:35:54 UTC</createdTime>
+<comment>There are 3 different kinds of request, &quot;PR&quot;,&quot;AOR&quot; and &quot;SQRR&quot;. The request number will be prefixed with &quot;pr-&quot;, &quot;aor-&quot; and &quot;sqrr-&quot; respectively.&lt;br/&gt;</comment>
+<generatorID>A565D6AB-47BD-B9DC-973B-BBF61878F614</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>4C03E305-CCFA-5F67-0EFA-0ED1D3990336</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3EAA2042-3AAF-DE8D-A684-3C8AC6EB25BB" name="ProcessingOutcomes PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:35:54 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>60C21417-1E52-1E84-CC7E-BA8D9E70B090</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

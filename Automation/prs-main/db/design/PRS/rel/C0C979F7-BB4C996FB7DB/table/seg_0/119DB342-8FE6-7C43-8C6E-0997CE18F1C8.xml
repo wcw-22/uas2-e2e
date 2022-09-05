@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="119DB342-8FE6-7C43-8C6E-0997CE18F1C8" name="PRS_APPV_LMT">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_APPV_LMT</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table stores the WBS / GL account and approved amount for the request.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>3D2EA499-24A6-C226-1A8B-9D9AC7591DA8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="APPV_LMT_N" id="4EA59A2D-AC05-493C-A771-B77693501535">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_LMT</sourceObjSchema>
+<sourceObjName>APPV_LMT_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key. It is a sequence no.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>9ED382ED-EF78-5EC7-7423-A15D9EB74F21</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PR_N" id="7214A158-145B-CAA7-7862-F078911A45A6">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_LMT</sourceObjSchema>
+<sourceObjName>PR_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Foreign key referring to request.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>C114C0F3-E2EB-9D77-3BD3-BED046509D26</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57960A17-555E-9BC3-A341-53BFEA18803D" referredColumn="9A0DCB1E-7803-F44B-ADED-4F5A6B7754C9"/>
+</associations>
+</Column>
+<Column name="WBS_AC_N" id="FF4E065F-E2D9-626F-8B9B-9F35B89CDF87">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_LMT</sourceObjSchema>
+<sourceObjName>WBS_AC_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Foreign key referring to a WBS account]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>CF3F1B20-87EA-25D6-2A2C-B505B87747AF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GL_AC_N" id="4A19789D-90F6-E067-D69B-D0D88D8D318E">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_LMT</sourceObjSchema>
+<sourceObjName>GL_AC_N</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Foreign key referring to a GL account.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>D6EA612F-A2D9-E269-BBD6-8AD03C2576FC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMT_A" id="BF9D1C9D-AF0F-27A2-BAA2-455BA31F2246">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRS_APPV_LMT</sourceObjSchema>
+<sourceObjName>AMT_A</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[The limit amount approved.]]></commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>3D57CE64-E8B9-6882-BB62-C14169B97899</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,16,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A0F7F9B-D237-71A9-3132-7C789B1091A5" name="PRS_PAL_PK_AL">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PAL_PK_AL</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>45461B92-627B-C9BE-DB18-DB992B613DD1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EA59A2D-AC05-493C-A771-B77693501535"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A50A60C-39C9-8F0A-9119-7AB81D76AA8F" schemaObject="E01E0864-7072-F5D2-C4C0-2AF1FBD0A8DB" name="PRS_PAL_PK_AL">
+<sourceConnName>ADMT</sourceConnName>
+<sourceObjSchema>PRSDBM</sourceObjSchema>
+<sourceObjName>PRS_PAL_PK_AL</sourceObjName>
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<importedID>F56B1E52-3AE2-2CC3-8A96-8F8C34033DB9</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EA59A2D-AC05-493C-A771-B77693501535"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C44AC3CD-1F6B-8E69-F8F9-0B529C4FD034" name="PRS_PAL_PK_PN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:07:59 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7214A158-145B-CAA7-7862-F078911A45A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

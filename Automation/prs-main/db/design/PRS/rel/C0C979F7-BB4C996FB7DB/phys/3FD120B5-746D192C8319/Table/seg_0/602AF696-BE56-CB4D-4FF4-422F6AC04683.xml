@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MSRUNIT" directorySegmentName="seg_0" id="602AF696-BE56-CB4D-4FF4-422F6AC04683">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:11:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MSRUNIT_T1" id="27F6A733-0A37-9D10-6390-96205BBF7A17">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:11:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MSRUNIT_T" id="3F967FDB-8148-9D19-B0F8-C5AD74820F88">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:11:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MSRUNIT_C" id="D24EF0EF-75E4-5159-FE90-6130710D92DE">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:11:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="NC_UOM_PK_UC" id="252D81B9-D33A-239D-EEEF-FC8D005D2EC4">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-07-03 10:11:49 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

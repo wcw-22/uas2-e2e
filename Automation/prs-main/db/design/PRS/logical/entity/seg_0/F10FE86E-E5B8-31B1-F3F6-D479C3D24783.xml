@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F10FE86E-E5B8-31B1-F3F6-D479C3D24783" name="Lineitems">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:01:37 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="request_number" id="98D3B413-D278-75C5-8480-F908B4233AEF">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:08:08 UTC</createdTime>
+<comment>There are 3 different kinds of request, &quot;PR&quot;,&quot;AOR&quot; and &quot;SQRR&quot;. The request number will be prefixed with &quot;pr-&quot;, &quot;aor-&quot; and &quot;sqrr-&quot; respectively.&lt;br/&gt;</comment>
+<generatorID>6A3F6C25-BB92-22C6-7601-7F4CD70B84FD</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>4C03E305-CCFA-5F67-0EFA-0ED1D3990336</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+<Attribute name="lineitem_number" id="904F1091-45A7-05FE-59BA-0C458E8D23EF">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:03:11 UTC</createdTime>
+<comment>This is the lineitem number within a purchase request. it start from 1 for each new purchase request.</comment>
+<commentInRDBMS>This is the lineitem number within a purchase request. It is running number from 1 onwards within each purchase request.</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+</Attribute>
+<Attribute name="product" id="5B6D1F97-A255-41D5-C2F9-83D3540A84AE">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:05:09 UTC</createdTime>
+<comment>Refers to the details of the product in this lineitem.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="quantity" id="3E61A702-3F38-1D7B-2851-9D4BAA034089">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:04:48 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="unit_price" id="83BEE7AA-AE29-F6C1-7207-9A88EED31B74">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:04:55 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+</Attribute>
+<Attribute name="subtotal" id="F7E3118A-D983-07F9-47B4-3C3B192D17C4">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:05:03 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+</Attribute>
+<Attribute name="unit_code" id="E99D49AD-B021-CAC2-8B60-9843EDAC036C">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 09:47:36 UTC</createdTime>
+<comment>Refer to MSRUNIT, for instance &apos;BOX&apos; or &apos;EA&apos;</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+</Attribute>
+<Attribute name="quantify_per_unit" id="E4C4B32B-6DEB-B0D6-9C40-F99C0C7AA721">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 10:07:50 UTC</createdTime>
+<comment>To indicate count of items within the unit such as &apos;Box&apos;.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="385CE883-AF9E-E470-BC37-8580B140E068" name="Lineitems PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:56:47 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>98D3B413-D278-75C5-8480-F908B4233AEF</attributeRef>
+<attributeRef>904F1091-45A7-05FE-59BA-0C458E8D23EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

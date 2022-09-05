@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="188FFB7F-0BDE-472C-01FF-12A57D06D006" name="SystemChecks">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:02:19 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="check_type" id="64A83593-C6BD-DF04-40E7-DBB4101B3470">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:02:31 UTC</createdTime>
+<comment>To indicate types of check, such as chemical licence check or fund check. The possible checks shall be defined in a code table.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="check_outcome" id="730A25DF-2556-7CAA-B9CD-B40A72873D2D">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:03:21 UTC</createdTime>
+<comment>The possible value can be success or failure. The value may be defined in a code table.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="check_response" id="1BE05ADD-DB01-B28B-DB20-7A49D1E495BE">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:04:09 UTC</createdTime>
+<comment>To keep response from the server provide the check; The response here shall be transformed to conform to  PRS format. </comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Attribute>
+<Attribute name="request_number" id="E6F09208-8D40-3B26-2F94-02689DE47A48">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:06:39 UTC</createdTime>
+<comment>There are 3 different kinds of request, &quot;PR&quot;,&quot;AOR&quot; and &quot;SQRR&quot;. The request number will be prefixed with &quot;pr-&quot;, &quot;aor-&quot; and &quot;sqrr-&quot; respectively.&lt;br/&gt;</comment>
+<generatorID>8432FB0B-EA0B-956F-6760-CA18B3AF8872</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>4C03E305-CCFA-5F67-0EFA-0ED1D3990336</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,14 @@
+const Page = require('../Page')
+
+class PrsAppPurchaseNewAorAccountAssignment_10Page extends Page {
+  get nolabel_app_aor_account_assignment () { return $('APP-AOR-ACCOUNT-ASSIGNMENT') } 
+  get nolabel_ul () { return $('DIV.alert.alert-danger > UL') } 
+  get nolabel_li () { return $('DIV.alert.alert-danger > UL > LI:nth-of-type(1)') } 
+
+  open() {
+    return super.open('/prs/app/purchase/new/aor/account-assignment/34597029-ceea-4f83-a2e8-2f8a33d26fff') // update as needed
+  }
+} // end of class PrsAppPurchaseNewAorAccountAssignment_10Page
+
+module.exports = new PrsAppPurchaseNewAorAccountAssignment_10Page();
+

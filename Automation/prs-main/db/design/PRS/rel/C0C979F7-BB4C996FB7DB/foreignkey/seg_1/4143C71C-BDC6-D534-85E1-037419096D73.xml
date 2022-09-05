@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="4143C71C-BDC6-D534-85E1-037419096D73" containerWithKeyObject="124A5771-00A7-6054-8DA1-369FBED34616" localFKIndex="8F1B8C63-26D5-C74C-6AC2-D0C8C44E4127" name="PRS_PIS_FK_ITN">
+<createdBy>niluc</createdBy>
+<createdTime>2020-07-28 19:46:36 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<referredTableLongName>PRS_INTGR_STATUS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BFB3C78D-B578-A955-C760-98A87EDE3AE4</referredTableID>
+<keyObject>B501E52C-446E-DDB2-4BC9-CA7D14DCE572</keyObject>
+<referredKeyID>B501E52C-446E-DDB2-4BC9-CA7D14DCE572</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>INTGR_TRAN_N</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

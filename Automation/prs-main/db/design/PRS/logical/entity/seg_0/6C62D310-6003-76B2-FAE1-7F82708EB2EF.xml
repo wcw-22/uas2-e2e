@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6C62D310-6003-76B2-FAE1-7F82708EB2EF" name="AccountAssignments">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:21:58 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="WBS_account" id="4422E28B-4425-5168-4DB5-F1772F03CC0F">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:25:08 UTC</createdTime>
+<comment>Refer to WBS accounts table.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+</Attribute>
+<Attribute name="GL_account" id="CF373846-20C8-8B4F-B83D-BA31118D8928">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:25:58 UTC</createdTime>
+<comment>Refer to GL accounts table.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+</Attribute>
+<Attribute name="quantity" id="D3ECA236-3B60-5BE7-AFC5-330F7036A07A">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-15 09:26:19 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="amount" id="3C6FEF13-E818-CAD4-C2F3-8D3BC4055702">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:32:04 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+</Attribute>
+<Attribute name="amount_sgd" id="211B4DE5-24AD-246E-30BF-F9346E51EC08">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:20:51 UTC</createdTime>
+<comment>If the PR uses foreign currently, the respective SGD amount shall be entered by the user mannully to facilitate fund check.</comment>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+</Attribute>
+<Attribute name="request_number" id="6975769B-F85B-B645-D540-6E56FB91947E">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:56:47 UTC</createdTime>
+<comment>There are 3 different kinds of request, &quot;PR&quot;,&quot;AOR&quot; and &quot;SQRR&quot;. The request number will be prefixed with &quot;pr-&quot;, &quot;aor-&quot; and &quot;sqrr-&quot; respectively.&lt;br/&gt;</comment>
+<generatorID>E07B59C4-538C-0625-D13F-806A02B041F5</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>98D3B413-D278-75C5-8480-F908B4233AEF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+<Attribute name="lineitem_number" id="E6ED83BC-5408-760A-F3D0-7243128F0EB3">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:56:51 UTC</createdTime>
+<comment>This is the lineitem number within a purchase request. it start from 1 for each new purchase request.</comment>
+<generatorID>E07B59C4-538C-0625-D13F-806A02B041F5</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>904F1091-45A7-05FE-59BA-0C458E8D23EF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="779ADFA2-5742-C33E-3956-30E49617409B" name="AccountAssignments PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 02:56:47 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6975769B-F85B-B645-D540-6E56FB91947E</attributeRef>
+<attributeRef>E6ED83BC-5408-760A-F3D0-7243128F0EB3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

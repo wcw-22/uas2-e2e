@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="From_RM_Integration Status Table" id="77CA37B9-F061-ECA1-90EA-48B8CDCDCDC8">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:17 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>5EE3647B-F9B0-9ABD-1CF9-BF65ED89BBBB</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="7EA55898-5928-ED48-AAB2-E4D31198DB48" otype="Entity" vid="82958DED-B4BE-717A-A7A6-327D5FEA0F37">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="24" y="28" width="241" height="158"/>
+<generatorID>F1005164-C5A8-0F93-A67E-CECED0924070</generatorID>
+</OView>
+</objectViews>
+</Diagram>

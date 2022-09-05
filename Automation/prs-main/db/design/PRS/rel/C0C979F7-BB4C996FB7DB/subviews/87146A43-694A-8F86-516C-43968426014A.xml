@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Inbound API Keys" id="87146A43-694A-8F86-516C-43968426014A">
+<createdBy>ccemksbh</createdBy>
+<createdTime>2019-04-09 02:38:14 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="52922626-06AB-7263-FF4D-CB400B3E5096" otype="Table" vid="8DF307C9-CF81-4EA0-8489-5807F5375251">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="168" y="136" width="232" height="186"/>
+</OView>
+</objectViews>
+</Diagram>

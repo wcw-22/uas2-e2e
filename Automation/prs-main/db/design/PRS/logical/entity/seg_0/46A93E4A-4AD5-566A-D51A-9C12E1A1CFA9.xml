@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="46A93E4A-4AD5-566A-D51A-9C12E1A1CFA9" name="QuotationDocuments">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:34:31 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_description" id="32CE729F-6D97-C588-EBB1-8E89760D21F5">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-28 01:35:16 UTC</createdTime>
+<generatorID>9C3CA845-2C44-E6BE-0B61-0671CFDBDEC6</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+</Attribute>
+<Attribute name="document_filename" id="9953A85D-AD11-7437-203D-B2DDA190A70C">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:47:52 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+</Attribute>
+<Attribute name="document_type" id="D9DBD763-312A-42AA-163F-7773F1A87326">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 08:14:36 UTC</createdTime>
+<comment>Refer to code table, possbile types are PDF, JPG, GIF, ZIP etc</comment>
+<commentInRDBMS>File type such as PDF or ZIP. The full list is defined in PRSCTABLE</commentInRDBMS>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="document_content" id="88F1D02B-33EF-90DA-7498-6BE8B400A6B7">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-16 07:34:57 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Attribute>
+<Attribute name="quotation_number" id="BED98A40-ADA3-4771-25F9-5BD1118EA0FA">
+<createdBy>ccegahd</createdBy>
+<createdTime>2020-06-25 18:06:41 UTC</createdTime>
+<generatorID>81E8A39D-0D77-41C2-4011-4F74BBB79283</generatorID>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<referedAttribute>0885ACB7-E8B3-8545-756A-085C6F74DFA2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7656E9F6-144A-AB65-21B2-B806F81E7B87" name="PRS_DOCU_PK">
+<createdBy>cceqx</createdBy>
+<createdTime>2019-03-19 02:39:21 UTC</createdTime>
+<ownerDesignName>PRS</ownerDesignName>
+<engineerTo>
+<item key="C0C979F7-38F7-0340-C92E-BB4C996FB7DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>
